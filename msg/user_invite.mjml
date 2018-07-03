@@ -1,0 +1,17 @@
+<mj-text mj-class="greeting">Hi {{data:user.firstName}}</mj-raw>!</mj-text>
+<mj-text mj-class="body">
+  You have been invited to be a part of the Influential Network on behalf of <b>{{data:companyName}}</b>. To join, here is what you'll need to do:
+  <ol style="text-align:left">
+    <li>Click the button below to be taken to our signup page. Once there, we only require a few pieces of information, such as a username and password of your choice, to get started. Your email should already be entered for you.</li>
+    <li>
+      Once you submit the form, you will receive an email address verification email. In that email, click the button to verify we have your correct email address. Our team will then start working to verify your account right away!
+    </li>
+    <li>
+      After verification, you will receive an "Account Verified" email containing a link that will grant you access to your Influential Network Dashboard.
+    </li>
+  </ol>
+  <p style="font-weight:bold">Welcome to Influential!</p>
+
+</mj-text>
+<mj-spacer height="10px" />
+<mj-button mj-class="TIN-btn">Setup Your Account</mj-button>

@@ -1,0 +1,10 @@
+<mj-text mj-class="greeting">
+  Hi {{data:firstName}}!
+</mj-text>
+
+<mj-text mj-class="body">
+  Your Influential Network email address has changed!
+
+</mj-text>
+<mj-spacer height="10px" />
+<mj-button mj-class="TIN-btn">Verify Your Email</mj-button>

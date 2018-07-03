@@ -1,0 +1,21 @@
+<mj-section vertical-align="middle">
+  <mj-group>
+    <mj-column width="74.5%">
+      <mj-image mj-class="TIN_logo" />
+    </mj-column>
+
+
+    <mj-column width="8.5%">
+      <mj-image mj-class="twitter_icon" padding="10% 15% 0% 15%" />
+    </mj-column>
+
+    <mj-column width="8.5%">
+      <mj-image mj-class="instagram_icon" padding="10% 15% 0% 15%" />
+    </mj-column>
+
+    </mj-column>
+    <mj-column width="8.5%">
+      <mj-image mj-class="facebook_icon" padding="10% 19% 0% 19%" />
+    </mj-column>
+  </mj-group>
+</mj-section>

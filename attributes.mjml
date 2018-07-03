@@ -1,0 +1,51 @@
+<!-- This file contains all the attributes, classes, and styling for email messages. CHANGES TO THIS FILE WILL RESULT IN CHANGES TO ALL TEMPLATES  -->
+
+<mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+<mj-attributes>
+
+  <!-- Text Styling -->
+  <mj-text font-family="Open Sans" padding="0 25px" font-size="14px" color="#464D5D" />
+  <mj-class name="greeting" font-size="16px" align="center" />
+  <mj-class name="body" align="center" padding-top="5%" line-height="22px" />
+
+
+  <!-- Colors -->
+  <mj-class name="ghost-white" color="#fafbfd" />
+  <mj-class name="white" color="#ffffff" />
+  <mj-class name="outer-space" color="#454d5e" />
+  <mj-class name="manatee" color="#9aa2ab" />
+  <mj-class name="platinum" color="#dfe1e5" />
+  <mj-class name="magic-potion" color="#ff4165" />
+  <mj-class name="gun-metal" color="#2d3137" />
+  <mj-class name="bright-sky-blue" color="#00c0ff" />
+  <mj-class name="light-blue" color="#06bdff" />
+  <mj-class name="medium-blue" color="#4a90e2" />
+  <mj-class name="light-green" color="#8bdd98" />
+  <mj-class name="medium-purple" color="#a177ff" />
+  <mj-class name="light-purple" color="#f098ec" />
+
+  <!-- Button Styling-->
+  <mj-class name="TIN-btn" background-color="#06bdff" font-size="16px" href="http://www.influential.co" />
+
+
+  <!-- Logos -->
+  <mj-class name="TIN_logo" align="left" width="150px" padding="0px" src="https://assets.influential.co/dashboard/email-templates/header-logo-new-2x.png" href="http://www.influential.co" />
+  <mj-class name="TIN_footer_logo" padding="0px" src="https://www.dropbox.com/s/jen6qwn563gv82p/Influential_Stacked-Logo_White.svg?raw=1" href="https://www.influential.co" />
+
+  <!-- Social Network Icons -->
+  <mj-class name="facebook_icon" align="center" padding="0px" src="https://assets.influential.co/dashboard/email-templates/icon-facebook_2x.png" href="https://www.facebook.com/influentialnetwork" />
+  <mj-class name="instagram_icon" align="center" padding="0px" src="https://assets.influential.co/dashboard/email-templates/icon-instagram_2x.png" href="https://instagram.com/influential_co" />
+  <mj-class name="twitter_icon" align="center" padding="0px" src="https://assets.influential.co/dashboard/email-templates/icon-twitter_2x.png" href="https://twitter.com/Influential_Co" />
+
+
+  <!-- Body -->
+  <mj-class name="TIN_background" background-url="https://www.dropbox.com/s/pc9snzbr5xzjnlu/header.png?raw=1" background-repeat="no-repeat" background-size="cover" padding="0% 11% 5% 11%" />
+  <mj-class name="TIN_content_card" border-radius="5px" background-color="white" padding="5% 0% 5% 0%" />
+
+  <!-- Footer -->
+
+  <mj-class name="TIN_footer_section" background-size="cover" align="center" color="#ffffff" background-color="#2d3137" />
+  <mj-class name="TIN_footer" align="center" color="#ffffff" line-height="28px" />
+
+  <mj-class name="unsubscribe" align="center" color="#ffffff" font-size="10px" href="{{data:unsubscribe_link}}" background-color="transparent" />
+</mj-attributes>

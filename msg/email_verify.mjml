@@ -1,0 +1,6 @@
+<mj-text mj-class="body">
+  Please click the link below to verify your email.
+
+</mj-text>
+<mj-spacer height="10px" />
+<mj-button mj-class="TIN-btn">Verify Your Email</mj-button>

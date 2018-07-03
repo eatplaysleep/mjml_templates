@@ -1,0 +1,12 @@
+<!-- This file builds the content card and imports the particular message template, which must include any call to action buttons/links  -->
+
+<mj-section>
+  <mj-column mj-class="TIN_content_card">
+
+    <!-- Replace {{data:msg}} with the message name. For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
+
+    <mj-include path="./msg_email_change.mjml" />
+
+  </mj-column>
+
+</mj-section>

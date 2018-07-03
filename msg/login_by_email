@@ -1,0 +1,5 @@
+<mj-text mj-class="body">
+  Here is your one-time-use link to login to the Influential Platform:
+</mj-text>
+<mj-spacer height="10px" />
+<mj-button mj-class="TIN-btn">Click to Login</mj-button>
