@@ -1,5 +1,5 @@
 <mj-text mj-class="greeting">
-  Hi {{data:firstName}}!
+  Hi {{data:greeting}}!
 </mj-text>
 
 <mj-text mj-class="body">

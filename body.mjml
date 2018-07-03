@@ -5,7 +5,7 @@
 
     <!-- Replace {{data:msg}} with the message name. For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
 
-    <mj-include path="./msg_email_change.mjml" />
+    <mj-include path="./msg/email_change.mjml" />
 
   </mj-column>
 

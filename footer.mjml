@@ -1,7 +1,7 @@
 <mj-wrapper mj-class="TIN_footer_section">
   <mj-section>
     <mj-column>
-      <mj-image width="80%" mj-class="TIN_footer_logo" />
+      <mj-image width="80px" mj-class="TIN_footer_logo" />
       <mj-spacer height="15px" />
       <mj-text mj-class="TIN_footer">The <span style="text-decoration:underline">only</span> Data-First Influencer Platform</mj-text>
       <mj-button mj-class="unsubscribe">Unsubscribe</mj-button>

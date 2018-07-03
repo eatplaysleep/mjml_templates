@@ -14,7 +14,7 @@
   </mj-head>
   <mj-body>
 
-    <mj-wrapper full-width mj-class="TIN_background">
+    <mj-wrapper mj-class="TIN_background">
 
       <!-- Header -->
       <mj-include path="./header.mjml" />
