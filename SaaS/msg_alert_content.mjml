@@ -1,0 +1,25 @@
+<mj-text mj-class="greeting">
+  Hey {{var:greeting}}!
+</mj-text>
+
+<mj-text mj-class="body">
+  {{var:socialAccount.firstName}} has posted new content to {{var:socialAccount.network}} matching your alert criteria.
+<p>
+  <b>Content Alert</b></br>
+  {{var:alert.description}}</br>
+	{{var:alert.criteria}}
+</p>
+<p>
+  <b>New Email</b></br>
+  {{var:user.email}}
+</p>
+<p>
+  You can now log in with your new email.
+</p>
+</mj-text>
+<mj-button mj-class="TIN-btn" href="http://www.influential.co" padding-bottom="20px">Login To Influential</mj-button>
+<mj-text mj-class="disclaimer">
+  <p>
+    If you did not request this change, please contact our team at <a href="mailto:support@influential.co?subject=Invalid%20email%20address%20change">support@influential.co</a>.
+  </p>
+</mj-text>

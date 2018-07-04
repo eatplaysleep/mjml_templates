@@ -1,0 +1,31 @@
+<mjml>
+
+  <!-- DO NOT CHANGE THE CONTENTS OF THIS FILE UNLESS YOU INTEND ON MODIFYING ALL EMAIL MESSAGE TEMPLATES -->
+
+  <mj-head>
+
+    <!-- Email Preview Text -->
+    <mj-preview>
+      {{data:email_preview}}
+    </mj-preview>
+
+    <mj-include path="./attributes.mjml" />
+
+  </mj-head>
+  <mj-body>
+
+    <mj-wrapper full-width mj-class="TIN_background">
+
+      <!-- Header -->
+      <mj-include path="./header.mjml" />
+
+      <!-- Body -->
+      <mj-include path="./body.mjml" />
+
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-include path="./footer.mjml" />
+
+  </mj-body>
+</mjml>

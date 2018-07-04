@@ -8,21 +8,26 @@
     <mj-preview>
       {{data:email_preview}}
     </mj-preview>
-
+    <mj-include path="./css.mjml" />
     <mj-include path="./attributes.mjml" />
 
   </mj-head>
   <mj-body>
 
-    <mj-wrapper mj-class="TIN_background">
+
 
       <!-- Header -->
       <mj-include path="./header.mjml" />
-
+<mj-spacer height="17px"/>
       <!-- Body -->
-      <mj-include path="./body.mjml" />
 
-    </mj-wrapper>
+
+          <!-- Replace {{data:msg}} with the message name. For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
+
+          <mj-include path="./msg_welcome.mjml" />
+
+
+
 
     <!-- Footer -->
     <mj-include path="./footer.mjml" />

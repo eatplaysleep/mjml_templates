@@ -1,0 +1,7 @@
+<mj-style>
+  a { text-decoration: none; color: inherit } 
+  
+  a:hover { color: #00c0ff }
+  
+  
+</mj-style>

@@ -1,6 +1,4 @@
-<mj-text mj-class="greeting">
-  Hi {{data:greeting}}!
-</mj-text>
+<mj-text mj-class="greeting">Hi {{data:user.firstName}}</mj-raw>!</mj-text>
 <mj-text mj-class="body">
   You have been invited to be a part of the Influential Network on behalf of <b>{{data:companyName}}</b>. To join, here is what you'll need to do:
   <ol style="text-align:left">
@@ -16,4 +14,4 @@
 
 </mj-text>
 <mj-spacer height="10px" />
-<mj-button mj-class="TIN-btn">Setup Your Account</mj-button>
+<mj-button mj-class="TIN-btn" href="http://www.influential.co" >Setup Your Account</mj-button>

@@ -3,9 +3,9 @@
 <mj-section>
   <mj-column mj-class="TIN_content_card">
 
-    <!-- Replace {{data:msg}} with the message name. For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
-
-    <mj-include path="./msg/email_verify.mjml" />
+    <!-- Replace {{data:msg}} with the message name. For example, the email "msg_email_change" could result in "./msg_email_change.mjml" -->
+    
+    <mj-include path="./{{data:msg}}.mjml" />
 
   </mj-column>
 

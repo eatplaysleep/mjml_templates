@@ -20,34 +20,31 @@ mjml [command]
 ```
 ## Usage
 
-The templates are structured with the `index.mjml` as the primary file. The `index.mjml` includes: `attributes.mjml` `header.mjml` `body.mjml` and `footer.mjml`.
+The templates are structured with the `index.mjml` as the primary file. The `index.mjml` includes: `attributes.mjml` `header.mjml` and `footer.mjml`.
 
-The files contain the following:
+The include files consist of the following:
     `attributes.mjml`: All the font, text, and other attributes/classes necessary to render the file correctly.
     `header.mjml`: The formatting for the header, which contains the logo and social network icons.
-    `body.mjml`: The basic "content card" of the body as well as an include message for the specific email contained in the `/msg` directory.
     `footer.mjml`: The footer logo, tag line, and unsubscribe link.
 
-In order to properly render an email any variables contained in any of the files must be properly replaced. Variables are indicated by the use of `{{data:variable_name}}`. Variables in the base files are as follows:
+In order to properly render an email any variables contained in any of the files must be properly replaced. Variables are indicated by the use of `{{var:variable_name}}`. Variables in the base files are as follows:
     #### index.mjml
-        `{{data:email_preview}}`: Provide a brief bit of text to be used in the email preview. For example, on a 'Welcome' email, the value for the variable could be `Welcome to Influential!`.
-
-    #### body.mjml      
-        `{{data:msg_path}}`: Provide the path for the message to be used in the body of the email. For example, for the `email_change.mjml` message you would provide `./msg/email_change.mjml` which would result in the content of that particular template being generated in the body of `index.mjml`.
+        `{{var:email_preview}}`: Provide a brief bit of text to be used in the email preview. For example, on a 'Welcome' email, the value for the variable could be `Welcome to Influential!`.      
+        `{{var:msg_path}}`: Provide the path for the message to be used in the body of the email. For example, for the `email_change.mjml` message you would provide `./msg/email_change.mjml` which would result in the content of that particular template being generated in the body of `index.mjml`.
 
     #### footer.mjml
-        `{{data:unsubscribe_link}}`: Provide the necessary data to properly generate an unsubscribe link.
+        `{{var:unsub_link}}`: Provide the necessary data to properly generate an unsubscribe link. This variable is a natively supported variable when using MailJet. If no value is provided then the default value configured in MailJet will be used.
 
     #### msg_{template}.mjml
-        Each message may use various different variables to fulfill the needs of the message. All variables will be in the `{{data:variable_name}}` format.
+        Each message may use various different variables to fulfill the needs of the message. All variables will be in the `{{var:variable_name}}` format.
 
         Common variables include:
-        `{{data:gretting}}`: The name/salutation to be used in the greeting. Typically the user's nickname.
-        `{{data:user.name}}`: The full name of a user.
-        `{{data:user.nickname}}`: The preferred nickname of a user, such as their first name.
-        `{{data:email}}`: A user's email address.
+        `{{var:greeting}}`: The name/salutation to be used in the greeting. Typically the user's nickname.
+        `{{var:user.name}}`: The full name of a user.
+        `{{var:user.nickname}}`: The preferred nickname of a user, such as their first name.
+        `{{var:email}}`: A user's email address.
 
-**Remember that prior to rendering a message the `body.mjml` must be compiled with the proper template path!**
+**Remember that prior to rendering a message the message body in `index.mjml` must be compiled with the proper template path!**
 
 ### Render MJML to HTML
 

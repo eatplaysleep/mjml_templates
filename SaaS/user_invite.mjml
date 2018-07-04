@@ -1,0 +1,115 @@
+<mjml>
+  <mj-head>
+    <mj-preview>{{data:email_preview}}</mj-preview>
+    <mj-font name="Open Sans" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <mj-attributes>
+      <mj-text font-family="Open Sans" padding="0 25px" font-size="14px" color="#464D5D" />
+      <!-- Colors -->
+
+      <mj-class name="ghost-white" color="#fafbfd" />
+      <mj-class name="white" color="#ffffff" />
+      <mj-class name="outer-space" color="#454d5e" />
+      <mj-class name="manatee" color="#9aa2ab" />
+      <mj-class name="platinum" color="#dfe1e5" />
+      <mj-class name="magic-potion" color="#ff4165" />
+      <mj-class name="gun-metal" color="#2d3137" />
+      <mj-class name="bright-sky-blue" color="#00c0ff" />
+      <mj-class name="light-blue" color="#06bdff" />
+      <mj-class name="medium-blue" color="#4a90e2" />
+      <mj-class name="light-green" color="#8bdd98" />
+      <mj-class name="medium-purple" color="#a177ff" />
+      <mj-class name="light-purple" color="#f098ec" />
+
+      <mj-class name="TIN-btn" background-color="#06bdff" font-size="16px" href="http://www.influential.co" />
+
+      <!-- Social Network Icons -->
+      <mj-class name="facebook_icon" align="center" padding="0px" src="https://assets.influential.co/dashboard/email-templates/icon-facebook_2x.png" href="https://www.facebook.com/influentialnetwork" />
+      <mj-class name="instagram_icon" align="center" padding="0px" src="https://assets.influential.co/dashboard/email-templates/icon-instagram_2x.png" href="https://instagram.com/influential_co" />
+      <mj-class name="twitter_icon" align="center" padding="0px" src="https://assets.influential.co/dashboard/email-templates/icon-twitter_2x.png" href="https://twitter.com/Influential_Co" />
+
+      <!-- Logos -->
+      <mj-class name="TIN_logo" align="left" width="150px" padding="0px" src="https://assets.influential.co/dashboard/email-templates/header-logo-new-2x.png" href="http://www.influential.co" />
+      <mj-class name="TIN_footer_logo" padding="0px" src="https://www.dropbox.com/s/jen6qwn563gv82p/Influential_Stacked-Logo_White.svg?raw=1" href="https://www.influential.co" />
+      <mj-class name="greeting" font-size="16px" align="center" />
+      <mj-class name="body" align="center" padding-top="5%" line-height="22px" />
+
+      <!-- Body -->
+      <mj-class name="TIN_background" background-url="https://www.dropbox.com/s/pc9snzbr5xzjnlu/header.png?raw=1" background-repeat="no-repeat" background-size="cover" padding="0% 11% 5% 11%" />
+      <mj-class name="TIN_content_card" border-radius="5px" background-color="white" padding="5% 0% 5% 0%" />
+
+      <!-- Footer -->
+
+      <mj-class name="TIN_footer_section" background-size="cover" align="center" color="#ffffff" background-color="#2d3137" />
+      <mj-class name="TIN_footer" align="center" color="#ffffff" line-height="28px" />
+
+      <mj-class name="unsubscribe" align="center" color="#ffffff" font-size="10px" href="{{data:unsubscribe_link}}" background-color="transparent" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body>
+    <!-- Header -->
+
+
+    <mj-wrapper full-width mj-class="TIN_background">
+      <mj-section vertical-align="middle">
+        <mj-group>
+          <mj-column width="74.5%">
+            <mj-image mj-class="TIN_logo" />
+          </mj-column>
+
+
+          <mj-column width="8.5%">
+            <mj-image mj-class="twitter_icon" padding="10% 15% 0% 15%" />
+          </mj-column>
+
+          <mj-column width="8.5%">
+            <mj-image mj-class="instagram_icon" padding="10% 15% 0% 15%" />
+          </mj-column>
+
+          </mj-column>
+          <mj-column width="8.5%">
+            <mj-image mj-class="facebook_icon" padding="10% 19% 0% 19%" />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+      <mj-section>
+        <mj-column mj-class="TIN_content_card">
+
+          <mj-text mj-class="greeting">Hi {{data:user.firstName}}</mj-raw>!</mj-text>
+          <mj-text mj-class="body">
+            You have been invited to be a part of the Influential Network on behalf of <b>{{data:companyName}}</b>. To join, here is what you'll need to do:
+            <ol style="text-align:left">
+              <li>Click the button below to be taken to our signup page. Once there, we only require a few pieces of information, such as a username and password of your choice, to get started. Your email should already be entered for you.</li>
+              <li>
+                Once you submit the form, you will receive an email address verification email. In that email, click the button to verify we have your correct email address. Our team will then start working to verify your account right away!
+              </li>
+              <li>
+                After verification, you will receive an "Account Verified" email containing a link that will grant you access to your Influential Network Dashboard.
+              </li>
+            </ol>
+            <p style="font-weight:bold">Welcome to Influential!</p>
+
+          </mj-text>
+          <mj-spacer height="10px" />
+          <mj-button mj-class="TIN-btn">Setup Your Account</mj-button>
+        </mj-column>
+
+      </mj-section>
+
+    </mj-wrapper>
+    <mj-wrapper mj-class="TIN_footer_section">
+      <mj-section>
+        <mj-column>
+          <mj-image width="80%" mj-class="TIN_footer_logo" />
+          <mj-spacer height="15px" />
+          <mj-text mj-class="TIN_footer">The <span style="text-decoration:underline">only</span> Data-First Influencer Platform</mj-text>
+          <mj-button mj-class="unsubscribe">Unsubscribe</mj-button>
+        </mj-column>
+      </mj-section>
+
+    </mj-wrapper>
+
+
+
+
+  </mj-body>
+</mjml>

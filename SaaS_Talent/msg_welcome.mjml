@@ -1,0 +1,29 @@
+<mj-section padding="0px">
+  <mj-column>
+<mj-text>
+Hey, {{var:user.nickname}}! Thanks for signing up for the Influential Platform. As soon as you verify your email address, you'll be able to get started.
+</mj-text>
+<mj-button mj-class="TIN-btn" href="http://www.influential.co">Verify Your Email Address</mj-button>
+<mj-text mj-class="disclaimer">
+  Or verify using this link: 
+<a href="{{var:btn_cta}}">{{var:btn_cta}}</a>
+</mj-text>
+    </mj-column>
+</mj-section>
+<mj-section padding="0px 62px 0px 62px">
+  <mj-column>
+<mj-table>
+  <table style="border:none">
+  <tr>
+  <td>
+    test
+    </td>
+    <td>
+    test
+    </td>
+  </tr>
+</table>
+  
+  </mj-table>
+  </mj-column>
+</mj-section>

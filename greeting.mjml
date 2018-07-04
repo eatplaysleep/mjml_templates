@@ -1,3 +1,0 @@
-<mj-text mj-class="greeting">
-  {{data:greeting}}
-</mj-text>
