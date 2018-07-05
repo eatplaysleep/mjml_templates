@@ -37,8 +37,9 @@
   <mj-column>
 
     <!--"{{var.socialAccount.avatar}}"-->
-    <mj-image mj-class="avatar" src="https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" align="center" css-class="profile-photo" />
-    <mj-image mj-class="instagram_icon" align="center" css-class="social-icon" />
+    <!-- "https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" -->
+    <mj-image mj-class="avatar" src="{{var.socialAccount.avatar}}" align="center" css-class="profile-photo" />
+    <mj-image mj-class="{{var:network}}" align="center" css-class="social-icon" />
   </mj-column>
 </mj-section>
 

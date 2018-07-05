@@ -17,19 +17,19 @@
     <mj-group mj-class="social_icons">
       <mj-column width="38%" />
       <mj-column width="7%">
-        <mj-image mj-class="facebook_icon" href="https://www.facebook.com/influentialnetwork" />
+        <mj-image mj-class="facebook" href="https://www.facebook.com/influentialnetwork" />
       </mj-column>
 
       <mj-column width="1.5%" />
 
       <mj-column width="7%">
-        <mj-image mj-class="instagram_icon" href="https://instagram.com/influential_co" />
+        <mj-image mj-class="instagram" href="https://instagram.com/influential_co" />
       </mj-column>
 
       <mj-column width="1.5%" />
 
       <mj-column width="7%">
-        <mj-image mj-class="twitter_icon" href="https://twitter.com/Influential_Co" />
+        <mj-image mj-class="twitter" href="https://twitter.com/Influential_Co" />
       </mj-column>
 
       <mj-column width="38%" />
