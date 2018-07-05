@@ -1,4 +1,4 @@
-#A few notes
+# A few notes
 1. The current working directory is `SaaS_Talent`.
 2. The `sample_xxxxx.html` files can be opened in a browser to see what each template looks like at the time the file was generated. **If templates are modified, update the HTML output.**
 
