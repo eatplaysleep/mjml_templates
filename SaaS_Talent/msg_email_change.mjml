@@ -1,0 +1,53 @@
+<!-- Header -->
+
+<mj-section vertical-align="middle" padding-left="20px">
+  <mj-column>
+    <mj-image mj-class="TIN_logo" />
+  </mj-column>
+</mj-section>
+
+<!-- Body -->
+
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="header">
+      Email Change/Update
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="3px 0px 0px 0px">
+  <mj-column>
+    <mj-image src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" width="99px" align="left" />
+  </mj-column>
+</mj-section>
+<mj-spacer height="17px" />
+<mj-section padding="0px">
+  <mj-column>
+    <mj-text>
+      <p>Hey, {{var:customer.user.nickname}}! We noticed you made a change to your email address recently.</p>
+      <p>
+        <b>Old Email</b></br>
+        {{var:customer.user.email.old}}
+      </p>
+      <p>
+        <b>New Email</b></br>
+        {{var:customer.user.email}}
+      </p>
+      <p style="text-align:center">
+        You can now log in with your new email.
+      </p>
+    </mj-text>
+    <mj-button mj-class="TIN-btn" padding="0px 0px 0px 0px" href="http://www.influential.co">Login</mj-button>
+    <!--
+    <mj-text mj-class="disclaimer">
+      Or verify using this link:
+      <a href="{{var:btn_cta}}">{{var:btn_cta}}</a>
+    </mj-text> -->
+    <mj-text mj-class="disclaimer">
+      <p>
+        If you did not request this change, please contact our team at <a href="mailto:support@influential.co?subject=Invalid%20email%20address%20change">support@influential.co</a>.
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>

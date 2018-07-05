@@ -7,7 +7,7 @@
   <mj-text font-family="Open Sans" padding="0 25px" font-size="14px" line-height="28px" color="#9aa2ab" />
   <mj-class name="greeting" font-size="16px" align="center" />
   <mj-class name="body" align="left" />
-  <mj-class name="disclaimer" align="left" font-weight="700" text-transform="uppercase" font-size="10px" line-height="10px" />
+  <mj-class name="disclaimer" align="center" padding-top="10px" font-weight="700" text-transform="uppercase" font-size="10px" line-height="10px" />
   <mj-class name="header" align="left" font-size="24px" font-style="normal" />
 
 
