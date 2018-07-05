@@ -1,0 +1,60 @@
+<!-- Header -->
+
+<mj-section vertical-align="middle" padding-left="20px">
+  <mj-column>
+    <mj-image mj-class="TIN_logo" />
+  </mj-column>
+</mj-section>
+
+<!-- Body -->
+
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="header">
+      Follower {{var:alert.type}} Alert for {{var:socialAccount.firstName}}
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="3px 0px 0px 0px">
+  <mj-column>
+    <mj-image src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" width="99px" align="left" />
+  </mj-column>
+</mj-section>
+<mj-spacer height="17px" />
+<mj-section padding="0px">
+  <mj-column>
+
+    <mj-text>
+      <p>Hey, {{var:customer.user.nickname}}!</p>
+      <p>{{var:socialAccount.firstName}}'s <span style="font-weight:bold; color:#00c0ff">{{var:socialAccount.network}}</span> following has {{var:alert.type}}d by at least {{var:alert.parameter}}.
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="30px 2px 0px 0px">
+  <mj-column>
+
+    <!--"{{var.socialAccount.avatar}}"-->
+    <mj-image mj-class="avatar" src="https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" align="center" css-class="profile-photo" />
+    <mj-image mj-class="instagram_icon" align="center" css-class="social-icon" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0px">
+  <mj-column>
+    <mj-text align="center">
+      <a href="{{var:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
+
+    </mj-text>
+  </mj-column>
+
+</mj-section>
+
+
+<mj-section>
+  <mj-column>
+    <mj-button mj-class="TIN-btn" padding="20px 0px 0px 0px" href="http://www.influential.co">View Alert</mj-button>
+  </mj-column>
+</mj-section>

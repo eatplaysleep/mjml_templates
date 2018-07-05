@@ -56,14 +56,100 @@
     <style type="text/css">
       @media only screen and (min-width:480px) {
         .mj-column-per-100 { width:100% !important; max-width: 100%; }
-.mj-column-per-16 { width:16% !important; max-width: 16%; }
-.mj-column-per-33 { width:33.333333333333336% !important; max-width: 33.333333333333336%; }
+.mj-column-per-38 { width:38% !important; max-width: 38%; }
+.mj-column-per-7 { width:7% !important; max-width: 7%; }
+.mj-column-per-1 { width:1.5% !important; max-width: 1.5%; }
       }
     </style>
-    
+    <style type="text/css">
+[owa] .mj-column-per-100 { width:100% !important; max-width: 100%; }
+[owa] .mj-column-per-38 { width:38% !important; max-width: 38%; }
+[owa] .mj-column-per-7 { width:7% !important; max-width: 7%; }
+[owa] .mj-column-per-1 { width:1.5% !important; max-width: 1.5%; }
+</style>
   
         <style type="text/css">
         
+
+    .mj-carousel {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    .mj-carousel-62d85e6f6dfd-icons-cell {
+      display: table-cell !important;
+      width: 30px !important;
+    }
+
+    .mj-carousel-radio,
+    .mj-carousel-next,
+    .mj-carousel-previous {
+      display: none !important;
+    }
+
+    .mj-carousel-thumbnail,
+    .mj-carousel-next,
+    .mj-carousel-previous {
+      touch-action: manipulation;
+    }
+
+    .mj-carousel-62d85e6f6dfd-radio:checked + .mj-carousel-content .mj-carousel-image,.mj-carousel-62d85e6f6dfd-radio:checked + * + .mj-carousel-content .mj-carousel-image,.mj-carousel-62d85e6f6dfd-radio:checked + * + * + .mj-carousel-content .mj-carousel-image {
+      display: none !important;
+    }
+
+    .mj-carousel-62d85e6f6dfd-radio-1:checked + * + * + .mj-carousel-content .mj-carousel-image-1,.mj-carousel-62d85e6f6dfd-radio-2:checked + * + .mj-carousel-content .mj-carousel-image-2,.mj-carousel-62d85e6f6dfd-radio-3:checked + .mj-carousel-content .mj-carousel-image-3 {
+      display: block !important;
+    }
+
+    .mj-carousel-previous-icons,
+    .mj-carousel-next-icons,
+    .mj-carousel-62d85e6f6dfd-radio-1:checked + * + * + .mj-carousel-content .mj-carousel-next-2,.mj-carousel-62d85e6f6dfd-radio-2:checked + * + .mj-carousel-content .mj-carousel-next-3,.mj-carousel-62d85e6f6dfd-radio-3:checked + .mj-carousel-content .mj-carousel-next-1,
+    .mj-carousel-62d85e6f6dfd-radio-1:checked + * + * + .mj-carousel-content .mj-carousel-previous-3,.mj-carousel-62d85e6f6dfd-radio-2:checked + * + .mj-carousel-content .mj-carousel-previous-1,.mj-carousel-62d85e6f6dfd-radio-3:checked + .mj-carousel-content .mj-carousel-previous-2 {
+      display: block !important;
+    }
+
+    .mj-carousel-62d85e6f6dfd-radio-1:checked + * + * + .mj-carousel-content .mj-carousel-62d85e6f6dfd-thumbnail-1,.mj-carousel-62d85e6f6dfd-radio-2:checked + * + .mj-carousel-content .mj-carousel-62d85e6f6dfd-thumbnail-2,.mj-carousel-62d85e6f6dfd-radio-3:checked + .mj-carousel-content .mj-carousel-62d85e6f6dfd-thumbnail-3 {
+      border-color: #00c0ff !important;
+    }
+
+    .mj-carousel-image img + div,
+    .mj-carousel-thumbnail img + div {
+      display: none !important;
+    }
+
+    .mj-carousel-62d85e6f6dfd-thumbnail:hover + * + * + .mj-carousel-main .mj-carousel-image,.mj-carousel-62d85e6f6dfd-thumbnail:hover + * + .mj-carousel-main .mj-carousel-image,.mj-carousel-62d85e6f6dfd-thumbnail:hover + .mj-carousel-main .mj-carousel-image {
+      display: none !important;
+    }
+
+    .mj-carousel-thumbnail:hover {
+      border-color: #00c0ff !important;
+    }
+
+    .mj-carousel-62d85e6f6dfd-thumbnail-1:hover + * + * + .mj-carousel-main .mj-carousel-image-1,.mj-carousel-62d85e6f6dfd-thumbnail-2:hover + * + .mj-carousel-main .mj-carousel-image-2,.mj-carousel-62d85e6f6dfd-thumbnail-3:hover + .mj-carousel-main .mj-carousel-image-3 {
+      display: block !important;
+    }
+    
+
+      .mj-carousel noinput { display:block !important; }
+      .mj-carousel noinput .mj-carousel-image-1 { display: block !important;  }
+      .mj-carousel noinput .mj-carousel-arrows,
+      .mj-carousel noinput .mj-carousel-thumbnails { display: none !important; }
+
+      [owa] .mj-carousel-thumbnail { display: none !important; }
+
+      @media screen yahoo {
+          .mj-carousel-62d85e6f6dfd-icons-cell,
+          .mj-carousel-previous-icons,
+          .mj-carousel-next-icons {
+              display: none !important;
+          }
+
+          .mj-carousel-62d85e6f6dfd-radio-1:checked + *+ *+ .mj-carousel-content .mj-carousel-62d85e6f6dfd-thumbnail-1 {
+              border-color: transparent;
+          }
+      }
+    
         
 
     @media only screen and (max-width:480px) {
@@ -72,9 +158,7 @@
     }
   
         </style>
-        <style type="text/css">a { text-decoration: none; color: inherit } 
-  
-  a:hover { color: #00c0ff }</style>
+        
       </head>
       <body>
         
@@ -83,10 +167,8 @@
     </div>
   
         
-      <div
-         style=""
-      >
-        <!-- Header -->
+      <div style="">
+        <!-- Replace {{data:msg}} with the message name. --><!-- For example, the email "msg/email_change" would result in "./msg/email_change.mjml" --><!-- Header -->
       
       <!--[if mso | IE]>
       <table
@@ -97,16 +179,12 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;padding-left:20px;text-align:center;vertical-align:middle;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:20px 0;padding-left:20px;text-align:center;vertical-align:middle;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -117,33 +195,21 @@
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="left" style="font-size:0px;padding:0px;word-break:break-word;"
-              >
+              <td align="left" style="font-size:0px;padding:0px;word-break:break-word;">
                 
-      <table
-         align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
-      >
+      <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
         <tbody>
           <tr>
-            <td  style="width:109px;">
+            <td style="width:109px;">
               
-        <a
-           href="http://www.influential.co" target="_blank"
-        >
+        <a href="http://www.influential.co" target="_blank" style="text-decoration: none; color: inherit;">
           
-      <img
-         height="auto" src="https://assets.influential.co/dashboard/email-templates/logos/influential_logo_horizontal@2x.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="109"
-      />
+      <img height="auto" src="https://assets.influential.co/dashboard/email-templates/logos/influential_logo_horizontal@2x.png" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="109">
     
         </a>
       
@@ -178,7 +244,11 @@
           </td>
         </tr>
       </table>
+      <![endif]-->
+    
+    <!-- Body -->
       
+      <!--[if mso | IE]>
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
@@ -187,16 +257,12 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -207,24 +273,16 @@
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="left" style="font-size:0px;padding:0 25px;word-break:break-word;"
-              >
+              <td align="left" style="font-size:0px;padding:0 25px;word-break:break-word;">
                 
-      <div
-         style="font-family:Open Sans;font-size:24px;font-style:normal;line-height:28px;text-align:left;color:#9aa2ab;"
-      >
-        Welcome to 
-    <span style="font-weight:bold;font-size:20px">{{var:product.name}}</span>
+      <div style="font-family:Open Sans;font-size:24px;font-style:normal;line-height:28px;text-align:left;color:#9aa2ab;">
+        Content Alert
+      <span style="font-weight:bold;font-size:20px">{{var:product.name}}</span>
       </div>
     
               </td>
@@ -262,16 +320,12 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:3px 0px 0px 0px;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:3px 0px 0px 0px;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -282,29 +336,19 @@
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
-              >
+              <td align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;">
                 
-      <table
-         align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
-      >
+      <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
         <tbody>
           <tr>
-            <td  style="width:99px;">
+            <td style="width:99px;">
               
-      <img
-         height="auto" src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="99"
-      />
+      <img height="auto" src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="99">
     
             </td>
           </tr>
@@ -343,9 +387,7 @@
       
     <![endif]-->
   
-      <div
-         style="height:17px;"
-      >
+      <div style="height:17px;">
         &nbsp;
       </div>
       
@@ -353,11 +395,7 @@
     
         </td></tr></table>
       
-    <![endif]-->
-  
-    <!-- Body --><!-- Replace {{data:msg}} with the message name. For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
-      
-      <!--[if mso | IE]>
+    
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
@@ -366,16 +404,12 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:0px;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -386,62 +420,20 @@
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="left" style="font-size:0px;padding:0 25px;word-break:break-word;"
-              >
+              <td align="left" style="font-size:0px;padding:0 25px;word-break:break-word;">
                 
-      <div
-         style="font-family:Open Sans;font-size:14px;line-height:28px;text-align:left;color:#9aa2ab;"
-      >
-        Hey, {{var:user.nickname}}! Thanks for signing up for the Influential Platform. As soon as you verify your email address, you'll be able to get started.
-      </div>
-    
-              </td>
-            </tr>
-          
-            <tr>
-              <td
-                 align="left" vertical-align="middle" style="font-size:0px;padding:10px 25px;word-break:break-word;"
-              >
-                
-      <table
-         align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;"
-      >
-        <tr>
-          <td
-             align="center" bgcolor="#4a90e2" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:10px 25px;" valign="middle"
-          >
-            <a
-               href="http://www.influential.co" style="background:#4a90e2;color:#ffffff;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:12px;font-weight:normal;line-height:120%;Margin:0;text-decoration:none;text-transform:uppercase;" target="_blank"
-            >
-              Verify Your Email Address
-            </a>
-          </td>
-        </tr>
-      </table>
-    
-              </td>
-            </tr>
-          
-            <tr>
-              <td
-                 align="left" style="font-size:0px;padding:0 25px;word-break:break-word;"
-              >
-                
-      <div
-         style="font-family:Open Sans;font-size:10px;font-weight:700;line-height:10px;text-align:left;text-transform:uppercase;color:#9aa2ab;"
-      >
-        Or verify using this link: 
-<a href="{{var:btn_cta}}">{{var:btn_cta}}</a>
+      <div style="font-family:Open Sans;font-size:14px;line-height:28px;text-align:left;color:#9aa2ab;">
+        <p>Hey, {{var:customer.user.nickname}}!</p>
+      <p>{{var:socialAccount.firstName}} has posted new content to <span style="font-weight:bold; color:#00c0ff">{{var:socialAccount.network}}</span> matching the following alert:
+      </p>
+      <p style="font-weight:bold">
+        {{var:alert.description}}
+      </p>
       </div>
     
               </td>
@@ -479,52 +471,367 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:0px 62px 0px 62px;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:30px 2px 0px 0px;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="" style="vertical-align:top;width:476px;"
+               class="" style="vertical-align:top;width:598px;"
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+        <!-- "{{var.socialAccount.avatar}}" -->
+            <tr>
+              <td align="center" vertical-align="middle" class="profile-photo" style="position: relative; border-radius: 50%; width: 48px; font-size: 0px; padding: 0px; word-break: break-word;" width="48">
+                
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+        <tbody>
+          <tr>
+            <td style="width:48px;">
+              
+      <img height="auto" src="https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" style="border:0;border-radius:50%;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="48">
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+              </td>
+            </tr>
+          
+            <tr>
+              <td align="center" class="social-icon" style="position: relative; top: -15px; left: 20px; width: 24px; -webkit-filter: drop-shadow(0px 2.5px 2.5px rgba(0, 0, 0, 0.4)); filter: drop-shadow(0px 2.5px 2.5px rgba(0, 0, 0, 0.4)); font-size: 0px; padding: 0px; word-break: break-word;" width="24">
+                
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
+        <tbody>
+          <tr>
+            <td style="width:24px;">
+              
+      <img height="auto" src="https://www.dropbox.com/s/gblpygsz673i1mj/Icon_Instagram%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="24">
+    
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
       <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="Margin:0px auto;max-width:600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+          <tbody>
+            <tr>
+              <td style="direction:ltr;font-size:0px;padding:0px;text-align:center;vertical-align:top;">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="left" style="font-size:0px;padding:10px 25px;word-break:break-word;"
-              >
+              <td align="center" style="font-size:0px;padding:0 25px;word-break:break-word;">
                 
+      <div style="font-family:Open Sans;font-size:14px;line-height:28px;text-align:center;color:#9aa2ab;">
+        <a href="{{var:socialAccount.networkURL}}" style="text-decoration: none; color: inherit;">@{{var:socialAccount.username}}</a>
+      </div>
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
       <table
-         cellpadding="0" cellspacing="0" width="100%" border="0" style="cellspacing:0;color:#000000;font-family:Ubuntu, Helvetica, Arial, sans-serif;font-size:13px;line-height:22px;table-layout:auto;width:100%;"
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
-        <table style="border:none">
-  <tr>
-  <td>
-    test
-    </td>
-    <td>
-    test
-    </td>
-  </tr>
-</table>
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="Margin:0px auto;max-width:600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+          <tbody>
+            <tr>
+              <td style="direction:ltr;font-size:0px;padding:20px 40px 0px 40px;text-align:center;vertical-align:top;">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:520px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+        
+            <tr>
+              <td align="center" style="font-size:0px;word-break:break-word;">
+                
+      
+    <!--[if !mso><!-->
+    
+        <div class="mj-carousel">
+          
+      <input class="mj-carousel-radio mj-carousel-62d85e6f6dfd-radio mj-carousel-62d85e6f6dfd-radio-1" checked="checked" type="radio" name="mj-carousel-radio-62d85e6f6dfd" id="mj-carousel-62d85e6f6dfd-radio-1" style="display:none;mso-hide:all;">
+    
+      <input class="mj-carousel-radio mj-carousel-62d85e6f6dfd-radio mj-carousel-62d85e6f6dfd-radio-2" type="radio" name="mj-carousel-radio-62d85e6f6dfd" id="mj-carousel-62d85e6f6dfd-radio-2" style="display:none;mso-hide:all;">
+    
+      <input class="mj-carousel-radio mj-carousel-62d85e6f6dfd-radio mj-carousel-62d85e6f6dfd-radio-3" type="radio" name="mj-carousel-radio-62d85e6f6dfd" id="mj-carousel-62d85e6f6dfd-radio-3" style="display:none;mso-hide:all;">
+    
+          <div class="mj-carousel-content mj-carousel-62d85e6f6dfd-content" style="display:table;width:100%;table-layout:fixed;text-align:center;font-size:0px;">
+            
+      <a style="text-decoration: none; color: inherit; border: 2px solid transparent; border-radius: 6px; display: inline-block; overflow: hidden; width: 110px;" href="#1" target="_blank" class="mj-carousel-thumbnail mj-carousel-62d85e6f6dfd-thumbnail mj-carousel-62d85e6f6dfd-thumbnail-1 ">
+        <label for="mj-carousel-62d85e6f6dfd-radio-1">
+          <img style="display:block;width:100%;height:auto;" src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC8xN2NmYTU5ODBmM2Y5Y2M1MzdmNDI3YjYyM2E1ZjQ4Ny81QkVCQjMwMi90NTEuMjg4NS0xNS9lMzUvMzM4NzgzMDJfMTgzOTg5NDU5MTAyOTU4XzE5MDQ5NTQyMjc4NDM2NjE4MjRfbi5qcGc" width="110">
+        </label>
+      </a>
+    
+      <a style="text-decoration: none; color: inherit; border: 2px solid transparent; border-radius: 6px; display: inline-block; overflow: hidden; width: 110px;" href="#2" target="_blank" class="mj-carousel-thumbnail mj-carousel-62d85e6f6dfd-thumbnail mj-carousel-62d85e6f6dfd-thumbnail-2 ">
+        <label for="mj-carousel-62d85e6f6dfd-radio-2">
+          <img style="display:block;width:100%;height:auto;" src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC9iZDRkNDM1NzM2MDA0ZTRhYzMzZmRiYjk0NjgwZGU2My81QkVCODBDNi90NTEuMjg4NS0xNS9lMzUvMzQ5MjEzNjdfMzgyMjA5NDIyMjkxNTgyXzUwMzEwMTY3MTkzNTE1NDU4NTZfbi5qcGc" width="110">
+        </label>
+      </a>
+    
+      <a style="text-decoration: none; color: inherit; border: 2px solid transparent; border-radius: 6px; display: inline-block; overflow: hidden; width: 110px;" href="#3" target="_blank" class="mj-carousel-thumbnail mj-carousel-62d85e6f6dfd-thumbnail mj-carousel-62d85e6f6dfd-thumbnail-3 ">
+        <label for="mj-carousel-62d85e6f6dfd-radio-3">
+          <img style="display:block;width:100%;height:auto;" src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC81N2MxNTBiNDRkZGExYmNhMmRlYjczYmI5NGU3YTJlNi81QkNCNEM0Ni90NTEuMjg4NS0xNS9lMzUvMzQ3MTI5OTNfNDIwMTUwOTg1MTI2ODIxXzM1NzY4OTQzMDM2NDcwMzk0ODhfbi5qcGc" width="110">
+        </label>
+      </a>
+    
+            
+      <table style="caption-side:top;display:table-caption;table-layout:fixed;width:100%;" border="0" cell-padding="0" cell-spacing="0" width="100%" role="presentation" class="mj-carousel-main">
+        <tbody>
+          <tr>
+            
+      <td class="mj-carousel-62d85e6f6dfd-icons-cell" style="font-size:0px;display:none;mso-hide:all;padding:0px;">
+        <div class="mj-carousel-previous-icons" style="display:none;mso-hide:all;">
+          
+              <label for="mj-carousel-62d85e6f6dfd-radio-1" class="mj-carousel-previous mj-carousel-previous-1">
+                <img src="https://influential.co/img/arrow-left.png" alt="previous" style="display:block;width:30px;height:auto;" width="30">
+              </label>
+            ,
+              <label for="mj-carousel-62d85e6f6dfd-radio-2" class="mj-carousel-previous mj-carousel-previous-2">
+                <img src="https://influential.co/img/arrow-left.png" alt="previous" style="display:block;width:30px;height:auto;" width="30">
+              </label>
+            ,
+              <label for="mj-carousel-62d85e6f6dfd-radio-3" class="mj-carousel-previous mj-carousel-previous-3">
+                <img src="https://influential.co/img/arrow-left.png" alt="previous" style="display:block;width:30px;height:auto;" width="30">
+              </label>
+            
+        </div>
+      </td>
+    
+            
+      <td style="padding:0px;">
+        <div class="mj-carousel-images">
+          
+      <div class="mj-carousel-image mj-carousel-image-1 " style="">
+        <a href="https://www.instagram.com/p/Bj5XOU4jDFU/" rel="undefined" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC8xN2NmYTU5ODBmM2Y5Y2M1MzdmNDI3YjYyM2E1ZjQ4Ny81QkVCQjMwMi90NTEuMjg4NS0xNS9lMzUvMzM4NzgzMDJfMTgzOTg5NDU5MTAyOTU4XzE5MDQ5NTQyMjc4NDM2NjE4MjRfbi5qcGc" style="border-radius:6px;display:block;width:520px;max-width:100%;height:auto;" width="520" border="0">
+    </a>
+      </div>
+    
+      <div class="mj-carousel-image mj-carousel-image-2 " style="display:none;mso-hide:all;">
+        <a href="https://www.instagram.com/p/BkD7QMfDVMm/" rel="undefined" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC9iZDRkNDM1NzM2MDA0ZTRhYzMzZmRiYjk0NjgwZGU2My81QkVCODBDNi90NTEuMjg4NS0xNS9lMzUvMzQ5MjEzNjdfMzgyMjA5NDIyMjkxNTgyXzUwMzEwMTY3MTkzNTE1NDU4NTZfbi5qcGc" style="border-radius:6px;display:block;width:520px;max-width:100%;height:auto;" width="520" border="0">
+    </a>
+      </div>
+    
+      <div class="mj-carousel-image mj-carousel-image-3 " style="display:none;mso-hide:all;">
+        <a href="https://www.instagram.com/p/BkQcu76jvCf/" rel="undefined" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC81N2MxNTBiNDRkZGExYmNhMmRlYjczYmI5NGU3YTJlNi81QkNCNEM0Ni90NTEuMjg4NS0xNS9lMzUvMzQ3MTI5OTNfNDIwMTUwOTg1MTI2ODIxXzM1NzY4OTQzMDM2NDcwMzk0ODhfbi5qcGc" style="border-radius:6px;display:block;width:520px;max-width:100%;height:auto;" width="520" border="0">
+    </a>
+      </div>
+    
+        </div>
+      </td>
+    
+            
+      <td class="mj-carousel-62d85e6f6dfd-icons-cell" style="font-size:0px;display:none;mso-hide:all;padding:0px;">
+        <div class="mj-carousel-next-icons" style="display:none;mso-hide:all;">
+          
+              <label for="mj-carousel-62d85e6f6dfd-radio-1" class="mj-carousel-next mj-carousel-next-1">
+                <img src="https://influential.co/img/arrow-right.png" alt="next" style="display:block;width:30px;height:auto;" width="30">
+              </label>
+            ,
+              <label for="mj-carousel-62d85e6f6dfd-radio-2" class="mj-carousel-next mj-carousel-next-2">
+                <img src="https://influential.co/img/arrow-right.png" alt="next" style="display:block;width:30px;height:auto;" width="30">
+              </label>
+            ,
+              <label for="mj-carousel-62d85e6f6dfd-radio-3" class="mj-carousel-next mj-carousel-next-3">
+                <img src="https://influential.co/img/arrow-right.png" alt="next" style="display:block;width:30px;height:auto;" width="30">
+              </label>
+            
+        </div>
+      </td>
+    
+          </tr>
+        </tbody>
+      </table>
+    
+          </div>
+        </div>
+      
+    <!--<![endif]-->
+  
+      
+    <!--[if mso]>
+    
+      <div
+         class="mj-carousel-image mj-carousel-image-1 " style=""
+      >
+        <a href=https://www.instagram.com/p/Bj5XOU4jDFU/ rel=undefined target="_blank">
+      <img
+         src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC8xN2NmYTU5ODBmM2Y5Y2M1MzdmNDI3YjYyM2E1ZjQ4Ny81QkVCQjMwMi90NTEuMjg4NS0xNS9lMzUvMzM4NzgzMDJfMTgzOTg5NDU5MTAyOTU4XzE5MDQ5NTQyMjc4NDM2NjE4MjRfbi5qcGc" style="border-radius:6px;display:block;width:520px;max-width:100%;height:auto;" width="520" border="0" />
+    </a>
+      </div>
+    
+    <![endif]-->
+  
+    
+              </td>
+            </tr>
+          
+      </table>
+    
+      </div>
+    
+          <!--[if mso | IE]>
+            </td>
+          
+        </tr>
+      
+                  </table>
+                <![endif]-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+    
+      
+      <!--[if mso | IE]>
+          </td>
+        </tr>
+      </table>
+      
+      <table
+         align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
+      >
+        <tr>
+          <td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;">
+      <![endif]-->
+    
+      
+      <div style="Margin:0px auto;max-width:600px;">
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
+          <tbody>
+            <tr>
+              <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
+                <!--[if mso | IE]>
+                  <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                
+        <tr>
+      
+            <td
+               class="" style="vertical-align:top;width:600px;"
+            >
+          <![endif]-->
+            
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+        
+            <tr>
+              <td align="center" vertical-align="middle" style="font-size:0px;padding:20px 0px 0px 0px;word-break:break-word;">
+                
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:separate;line-height:100%;">
+        <tr>
+          <td align="center" bgcolor="#4a90e2" role="presentation" style="border:none;border-radius:3px;cursor:auto;padding:10px 25px;" valign="middle">
+            <a href="http://www.influential.co" style="background: #4a90e2; color: #ffffff; font-family: Ubuntu, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: normal; line-height: 120%; Margin: 0; text-decoration: none; text-transform: uppercase;" target="_blank">
+              View Alert
+            </a>
+          </td>
+        </tr>
       </table>
     
               </td>
@@ -557,41 +864,7 @@
     
     <!-- Footer -->
       
-    <!--[if mso | IE]>
-    
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td height="65" style="vertical-align:top;height:65px;">
-      
-    <![endif]-->
-  
-      <div
-         style="height:65px;"
-      >
-        &nbsp;
-      </div>
-      
-    <!--[if mso | IE]>
-    
-        </td></tr></table>
-      
-    <![endif]-->
-  
-    
-      <p
-         style="border-top:solid 1px #9aa2ab;font-size:1;margin:0px auto;width:100%;"
-      >
-      </p>
-      
       <!--[if mso | IE]>
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" style="border-top:solid 1px #9aa2ab;font-size:1;margin:0px auto;width:550px;" role="presentation" width="550px"
-        >
-          <tr>
-            <td style="height:0;line-height:0;">
-              &nbsp;
-            </td>
-          </tr>
-        </table>
-      
       <table
          align="center" border="0" cellpadding="0" cellspacing="0" class="" style="width:600px;" width="600"
       >
@@ -600,16 +873,12 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:0px 0px 32px 0px;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:32px 0px 32px 0px;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -620,22 +889,14 @@
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="left" style="font-size:0px;padding:0 25px;word-break:break-word;"
-              >
+              <td align="left" style="font-size:0px;padding:0 25px;word-break:break-word;">
                 
-      <div
-         style="font-family:Open Sans;font-size:14px;line-height:28px;text-align:left;color:#9aa2ab;"
-      >
+      <div style="font-family:Open Sans;font-size:14px;line-height:28px;text-align:left;color:#9aa2ab;">
         
       </div>
     
@@ -674,16 +935,12 @@
       <![endif]-->
     
       
-      <div  style="background:#2d3137;background-color:#2d3137;Margin:0px auto;max-width:600px;">
+      <div style="background:#2d3137;background-color:#2d3137;Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#2d3137;background-color:#2d3137;width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#2d3137;background-color:#2d3137;width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;padding-top:28px;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:20px 0;padding-top:28px;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -700,16 +957,12 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -720,33 +973,21 @@
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="center" style="font-size:0px;padding:0px;word-break:break-word;"
-              >
+              <td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
                 
-      <table
-         align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
-      >
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
         <tbody>
           <tr>
-            <td  style="width:76px;">
+            <td style="width:76px;">
               
-        <a
-           href="https://www.influential.co" target="_blank"
-        >
+        <a href="https://www.influential.co" target="_blank" style="text-decoration: none; color: inherit;">
           
-      <img
-         height="auto" src="https://www.dropbox.com/s/jen6qwn563gv82p/Influential_Stacked-Logo_White.svg?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="76"
-      />
+      <img height="auto" src="https://www.dropbox.com/s/jen6qwn563gv82p/Influential_Stacked-Logo_White.svg?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="76">
     
         </a>
       
@@ -798,65 +1039,63 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:4px 0px 2px 0px;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:4px 0px 2px 0px;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
         <tr>
       
             <td
-               class="" style="vertical-align:middle;width:96px;"
+               class="" style="vertical-align:middle;width:600px;"
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-16 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;vertical-align:middle;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:0;line-height:0;text-align:left;display:inline-block;width:100%;direction:ltr;vertical-align:middle;">
         <!--[if mso | IE]>
         <table  role="presentation" border="0" cellpadding="0" cellspacing="0">
           <tr>
         
               <td
-                 style="vertical-align:top;width:32px;"
+                 style="vertical-align:top;width:228px;"
               >
               <![endif]-->
                 
-      <div
-         class="mj-column-per-33 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:33%;"
-      >
+      <div class="mj-column-per-38 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:38%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+        
+      </table>
+    
+      </div>
+    
+              <!--[if mso | IE]>
+              </td>
+              
+              <td
+                 style="vertical-align:top;width:42px;"
+              >
+              <![endif]-->
+                
+      <div class="mj-column-per-7 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:7%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="center" style="font-size:0px;padding:0px 4px 0px 4px;word-break:break-word;"
-              >
+              <td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
                 
-      <table
-         align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
-      >
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
         <tbody>
           <tr>
-            <td  style="width:24px;">
+            <td style="width:24px;">
               
-        <a
-           href="https://www.facebook.com/influentialnetwork" target="_blank"
-        >
+        <a href="https://www.facebook.com/influentialnetwork" target="_blank" style="text-decoration: none; color: inherit;">
           
-      <img
-         height="auto" src="https://www.dropbox.com/s/i3fcjsuotq4mwy7/Icon_Facebook%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="24"
-      />
+      <img height="auto" src="https://www.dropbox.com/s/i3fcjsuotq4mwy7/Icon_Facebook%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="24">
     
         </a>
       
@@ -876,37 +1115,41 @@
               </td>
               
               <td
-                 style="vertical-align:top;width:32px;"
+                 style="vertical-align:top;width:9px;"
               >
               <![endif]-->
                 
-      <div
-         class="mj-column-per-33 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:33%;"
-      >
+      <div class="mj-column-per-1 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:1.5%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+        
+      </table>
+    
+      </div>
+    
+              <!--[if mso | IE]>
+              </td>
+              
+              <td
+                 style="vertical-align:top;width:42px;"
+              >
+              <![endif]-->
+                
+      <div class="mj-column-per-7 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:7%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="center" style="font-size:0px;padding:0px 4px 0px 4px;word-break:break-word;"
-              >
+              <td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
                 
-      <table
-         align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
-      >
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
         <tbody>
           <tr>
-            <td  style="width:24px;">
+            <td style="width:24px;">
               
-        <a
-           href="https://instagram.com/influential_co" target="_blank"
-        >
+        <a href="https://instagram.com/influential_co" target="_blank" style="text-decoration: none; color: inherit;">
           
-      <img
-         height="auto" src="https://www.dropbox.com/s/gblpygsz673i1mj/Icon_Instagram%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="24"
-      />
+      <img height="auto" src="https://www.dropbox.com/s/gblpygsz673i1mj/Icon_Instagram%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="24">
     
         </a>
       
@@ -926,37 +1169,41 @@
               </td>
               
               <td
-                 style="vertical-align:top;width:32px;"
+                 style="vertical-align:top;width:9px;"
               >
               <![endif]-->
                 
-      <div
-         class="mj-column-per-33 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:33%;"
-      >
+      <div class="mj-column-per-1 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:1.5%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+        
+      </table>
+    
+      </div>
+    
+              <!--[if mso | IE]>
+              </td>
+              
+              <td
+                 style="vertical-align:top;width:42px;"
+              >
+              <![endif]-->
+                
+      <div class="mj-column-per-7 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:7%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="center" style="font-size:0px;padding:0px 4px 0px 4px;word-break:break-word;"
-              >
+              <td align="center" style="font-size:0px;padding:0px;word-break:break-word;">
                 
-      <table
-         align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;"
-      >
+      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-collapse:collapse;border-spacing:0px;">
         <tbody>
           <tr>
-            <td  style="width:24px;">
+            <td style="width:24px;">
               
-        <a
-           href="https://twitter.com/Influential_Co" target="_blank"
-        >
+        <a href="https://twitter.com/Influential_Co" target="_blank" style="text-decoration: none; color: inherit;">
           
-      <img
-         height="auto" src="https://www.dropbox.com/s/5gdvev34nqx41b4/Icon_Twitter%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="24"
-      />
+      <img height="auto" src="https://www.dropbox.com/s/5gdvev34nqx41b4/Icon_Twitter%403x.png?raw=1" style="border:0;display:block;outline:none;text-decoration:none;height:auto;width:100%;" width="24">
     
         </a>
       
@@ -968,6 +1215,22 @@
               </td>
             </tr>
           
+      </table>
+    
+      </div>
+    
+              <!--[if mso | IE]>
+              </td>
+              
+              <td
+                 style="vertical-align:top;width:228px;"
+              >
+              <![endif]-->
+                
+      <div class="mj-column-per-38 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:38%;">
+        
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
+        
       </table>
     
       </div>
@@ -1016,16 +1279,12 @@
       <![endif]-->
     
       
-      <div  style="Margin:0px auto;max-width:600px;">
+      <div style="Margin:0px auto;max-width:600px;">
         
-        <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
-        >
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
           <tbody>
             <tr>
-              <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;"
-              >
+              <td style="direction:ltr;font-size:0px;padding:20px 0;text-align:center;vertical-align:top;">
                 <!--[if mso | IE]>
                   <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                 
@@ -1036,24 +1295,16 @@
             >
           <![endif]-->
             
-      <div
-         class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
-      >
+      <div class="mj-column-per-100 outlook-group-fix" style="font-size:13px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
         
-      <table
-         border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%"
-      >
+      <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
         
             <tr>
-              <td
-                 align="center" style="font-size:0px;padding:0 25px;word-break:break-word;"
-              >
+              <td align="center" style="font-size:0px;padding:0 25px;word-break:break-word;">
                 
-      <div
-         style="font-family:Open Sans;font-size:14px;line-height:28px;text-align:center;color:#9aa2ab;"
-      >
-        Have a question or need help getting started?</br>
-      <a href="https://support.influential.co">Help Desk</a> | <a href="https://app.influential.co/getting-started">Get Started</a>
+      <div style="font-family:Open Sans;font-size:14px;line-height:28px;text-align:center;color:#9aa2ab;">
+        Have a question or need help getting started?<br>
+        <a href="https://support.influential.co" style="text-decoration: none; color: inherit;">Help Desk</a> | <a href="https://app.influential.co/getting-started" style="text-decoration: none; color: inherit;">Get Started</a>
       </div>
     
               </td>

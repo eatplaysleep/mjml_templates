@@ -1,4 +1,5 @@
-<mjml>
+<mjml></mjml>
+<mjml owa="desktop">
 
   <!-- DO NOT CHANGE THE CONTENTS OF THIS FILE UNLESS YOU INTEND ON MODIFYING ALL EMAIL MESSAGE TEMPLATES -->
 
@@ -14,17 +15,24 @@
   </mj-head>
   <mj-body>
 
+    <!-- Replace {{data:msg}} with the message name. -->
+    <!-- For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
 
 
-      <!-- Header -->
-      <mj-include path="./header.mjml" />
-<mj-spacer height="17px"/>
-      <!-- Body -->
 
 
-          <!-- Replace {{data:msg}} with the message name. For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
 
-          <mj-include path="./msg_welcome.mjml" />
+
+
+
+
+    <mj-include path="./msg_alert_content.mjml" />
+
+
+
+
+
+
 
 
 

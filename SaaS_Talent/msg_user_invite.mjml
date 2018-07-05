@@ -1,0 +1,77 @@
+<!-- Header -->
+
+<mj-section vertical-align="middle" padding-left="20px">
+  <mj-column>
+    <mj-image mj-class="TIN_logo" />
+  </mj-column>
+</mj-section>
+
+<!-- Body -->
+
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="header">
+      You've been invited to
+      <span style="font-weight:bold;font-size:20px">{{var:product.name}}</span>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="3px 0px 0px 0px">
+  <mj-column>
+    <mj-image src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" width="99px" align="left" />
+  </mj-column>
+</mj-section>
+<mj-spacer height="17px" />
+<mj-section padding="0px">
+  <mj-column>
+    <mj-text>
+      Hey, {{var:customer.user.nickname}}! You've been invited to join <span style="font-weight:bold">{{var:customer.company.name}}</span> on the Influential Platform. Accept the invitation and setup your account today by clicking below.
+    </mj-text>
+    <mj-button mj-class="TIN-btn" padding="25px 0px 0px 0px" href="http://www.influential.co">Accept Invite</mj-button>
+    <!--
+    <mj-text mj-class="disclaimer">
+      Or verify using this link:
+      <a href="{{var:btn_cta}}">{{var:btn_cta}}</a>
+    </mj-text> -->
+  </mj-column>
+</mj-section>
+
+<!-- Content -->
+
+<mj-section padding="25px 32px 0px 32px">
+  <mj-column>
+    <mj-table mj-class="content_table">
+      <table style="color:#9aa2ab; font-family:Open Sans; font-size:14px;">
+        <tr>
+          <td style="padding:0 32px 30px 0;">
+            <img src="https://www.dropbox.com/s/vi9kehivddlivbc/icons_onboarding.png?raw=1" width="33px">
+          </td>
+          <td style="padding:0 0 30px 0;">
+            <p style="font-weight:bold; line-height:0px">Onboard Talent</p>
+            <p style="font-size:12px;">Easily add creators and influencers under management to your account. Always stay synced and view all activity at a glance.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0 32px 30px 0;">
+            <img src="https://www.dropbox.com/s/14nrxymsipj8dw8/icons_manage.png?raw=1" width="32px">
+          </td>
+          <td style="padding:0 0 30px 0">
+            <p style="font-weight:bold; line-height:0px">Manage Dealflow</p>
+            <p style="font-size:12px;">View and manage campaign opportunities and offers on behalf of your talent. Get notified when influencers take action.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:0 32px 0 0;">
+            <img src="https://www.dropbox.com/s/s5vr77oee7srbfc/incons_insights.png?raw=1" width="34px">
+          </td>
+          <td>
+            <p style="font-weight:bold; line-height:0px">Gain Insights</p>
+            <p style="font-size:12px;">View performance and earnings statistics and gain audience insights on individual social accounts you manage.</p>
+          </td>
+        </tr>
+      </table>
+
+    </mj-table>
+  </mj-column>
+</mj-section>

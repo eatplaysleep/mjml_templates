@@ -1,6 +1,4 @@
-<mj-spacer height="65px"/>
-<mj-divider border-color="#9aa2ab" border-width="1px"/>
-<mj-section padding="0px 0px 32px 0px">
+<mj-section padding="32px 0px 32px 0px">
 
 
   <mj-column>
@@ -17,24 +15,31 @@
   </mj-section>
   <mj-section padding="4px 0px 2px 0px">
     <mj-group mj-class="social_icons">
-      <mj-column>
-        <mj-image mj-class="facebook_icon" />
+      <mj-column width="38%" />
+      <mj-column width="7%">
+        <mj-image mj-class="facebook_icon" href="https://www.facebook.com/influentialnetwork" />
       </mj-column>
 
-      <mj-column>
-        <mj-image mj-class="instagram_icon" />
+      <mj-column width="1.5%" />
+
+      <mj-column width="7%">
+        <mj-image mj-class="instagram_icon" href="https://instagram.com/influential_co" />
       </mj-column>
 
-      <mj-column>
-        <mj-image mj-class="twitter_icon"/>
+      <mj-column width="1.5%" />
+
+      <mj-column width="7%">
+        <mj-image mj-class="twitter_icon" href="https://twitter.com/Influential_Co" />
       </mj-column>
+
+      <mj-column width="38%" />
     </mj-group>
   </mj-section>
   <mj-section>
     <mj-column>
       <mj-text mj-class="TIN_footer">
         Have a question or need help getting started?</br>
-      <a href="https://support.influential.co">Help Desk</a> | <a href="https://app.influential.co/getting-started">Get Started</a>
+        <a href="https://support.influential.co">Help Desk</a> | <a href="https://app.influential.co/getting-started">Get Started</a>
       </mj-text>
     </mj-column>
   </mj-section>

@@ -1,0 +1,76 @@
+<!-- Header -->
+
+<mj-section vertical-align="middle" padding-left="20px">
+  <mj-column>
+    <mj-image mj-class="TIN_logo" />
+  </mj-column>
+</mj-section>
+
+<!-- Body -->
+
+<mj-section>
+  <mj-column>
+    <mj-text mj-class="header">
+      Content Alert
+      <span style="font-weight:bold;font-size:20px">{{var:product.name}}</span>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="3px 0px 0px 0px">
+  <mj-column>
+    <mj-image src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" width="99px" align="left" />
+  </mj-column>
+</mj-section>
+<mj-spacer height="17px" />
+<mj-section padding="0px">
+  <mj-column>
+
+    <mj-text>
+      <p>Hey, {{var:customer.user.nickname}}!</p>
+      <p>{{var:socialAccount.firstName}} has posted new content to <span style="font-weight:bold; color:#00c0ff">{{var:socialAccount.network}}</span> matching the following alert:
+      </p>
+      <p style="font-weight:bold">
+        {{var:alert.description}}
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+<mj-section padding="30px 2px 0px 0px">
+  <mj-column>
+
+    <!--"{{var.socialAccount.avatar}}"-->
+    <mj-image mj-class="avatar" src="https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" align="center" css-class="profile-photo" />
+    <mj-image mj-class="instagram_icon" align="center" css-class="social-icon" />
+  </mj-column>
+</mj-section>
+
+<mj-section padding="0px">
+  <mj-column>
+    <mj-text align="center">
+      <a href="{{var:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
+
+    </mj-text>
+  </mj-column>
+
+</mj-section>
+
+<mj-section padding="20px 40px 0px 40px">
+  <mj-column>
+    <mj-carousel mj-class="carousel">
+      <mj-carousel-image src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC8xN2NmYTU5ODBmM2Y5Y2M1MzdmNDI3YjYyM2E1ZjQ4Ny81QkVCQjMwMi90NTEuMjg4NS0xNS9lMzUvMzM4NzgzMDJfMTgzOTg5NDU5MTAyOTU4XzE5MDQ5NTQyMjc4NDM2NjE4MjRfbi5qcGc"
+        href="https://www.instagram.com/p/Bj5XOU4jDFU/" />
+      <mj-carousel-image src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC9iZDRkNDM1NzM2MDA0ZTRhYzMzZmRiYjk0NjgwZGU2My81QkVCODBDNi90NTEuMjg4NS0xNS9lMzUvMzQ5MjEzNjdfMzgyMjA5NDIyMjkxNTgyXzUwMzEwMTY3MTkzNTE1NDU4NTZfbi5qcGc"
+        href="https://www.instagram.com/p/BkD7QMfDVMm/" />
+      <mj-carousel-image src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC81N2MxNTBiNDRkZGExYmNhMmRlYjczYmI5NGU3YTJlNi81QkNCNEM0Ni90NTEuMjg4NS0xNS9lMzUvMzQ3MTI5OTNfNDIwMTUwOTg1MTI2ODIxXzM1NzY4OTQzMDM2NDcwMzk0ODhfbi5qcGc"
+        href="https://www.instagram.com/p/BkQcu76jvCf/" />
+    </mj-carousel>
+  </mj-column>
+</mj-section>
+
+<mj-section>
+  <mj-column>
+    <mj-button mj-class="TIN-btn" padding="20px 0px 0px 0px" href="http://www.influential.co">View Alert</mj-button>
+  </mj-column>
+</mj-section>
