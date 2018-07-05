@@ -1,5 +1,7 @@
 # mjml_templates
 
+**CURRENT DIRECTORY IS `SaaS_Talent`**
+
 ## Install MJML Locally
 
 Recommend installing and using MJML locally, in a project folder where you'll use MJML:
@@ -30,7 +32,7 @@ The include files consist of the following:
 In order to properly render an email any variables contained in any of the files must be properly replaced. Variables are indicated by the use of `{{var:variable_name}}`. Variables in the base files are as follows:
     #### index.mjml
         `{{var:email_preview}}`: Provide a brief bit of text to be used in the email preview. For example, on a 'Welcome' email, the value for the variable could be `Welcome to Influential!`.      
-        `{{var:msg_path}}`: Provide the path for the message to be used in the body of the email. For example, for the `email_change.mjml` message you would provide `./msg/email_change.mjml` which would result in the content of that particular template being generated in the body of `index.mjml`.
+        `{{var:msg_path}}`: Provide the path for the message to be used in the body of the email. For example, for the `msg_alert_content.mjml` message you would provide `./msg_alert_content.mjml` which would result in the content of that particular template being generated in the body of `index.mjml`.
 
     #### footer.mjml
         `{{var:unsub_link}}`: Provide the necessary data to properly generate an unsubscribe link. This variable is a natively supported variable when using MailJet. If no value is provided then the default value configured in MailJet will be used.
