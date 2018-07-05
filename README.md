@@ -2,25 +2,7 @@
 
 **CURRENT DIRECTORY IS `SaaS_Talent`**
 
-## Install MJML Locally
-
-Recommend installing and using MJML locally, in a project folder where you'll use MJML:
-```bash
-npm install mjml
-```
-In the folder where you installed MJML you can now run:
-```bash
-./node_modules/.bin/mjml [command]
-```
-To avoid typing `./node_modules/.bin/`, add it to your PATH:
-```bash
-export PATH="$PATH:./node_modules/.bin"
-```
-You can now run MJML directly, in that folder:
-```bash
-mjml [command]
-```
-## Usage
+## Structure of Repo/files
 
 The templates are structured with the `index.mjml` as the primary file. The `index.mjml` includes: `attributes.mjml` `header.mjml` and `footer.mjml`.
 
@@ -48,7 +30,31 @@ In order to properly render an email any variables contained in any of the files
 
 **Remember that prior to rendering a message the message body in `index.mjml` must be compiled with the proper template path!**
 
-### Render MJML to HTML
+## Installation Options
+
+### 1. Use the MJML App (recommended)
+The easiest method of developing with MJML is to use their native app. Simply download [the app](https://mjmlio.github.io/mjml-app/) and the repo and then open the project in the app. 
+
+### 2. Install MJML Locally
+
+Recommend installing and using MJML locally, in a project folder where you'll use MJML:
+```bash
+npm install mjml
+```
+In the folder where you installed MJML you can now run:
+```bash
+./node_modules/.bin/mjml [command]
+```
+To avoid typing `./node_modules/.bin/`, add it to your PATH:
+```bash
+export PATH="$PATH:./node_modules/.bin"
+```
+You can now run MJML directly, in that folder:
+```bash
+mjml [command]
+```
+#### Local Install Usage
+##### Render MJML to HTML
 
 ```bash
 mjml index.mjml
@@ -56,7 +62,7 @@ mjml index.mjml
 This will output a HTML file called `index.html` in the root directory.
 Input can also be a directory itself.
 
-### Validate MJML
+##### Validate MJML
 
 ```bash
 $> mjml -v index.mjml
@@ -64,7 +70,7 @@ $> mjml -v index.mjml
 
 It will log validation errors. If there are errors, exits with code 1. Otherwise, exits with code 0.
 
-### Render and redirect the result to stdout
+##### Render and redirect the result to stdout
 
 ```bash
 mjml -s index.mjml
@@ -74,7 +80,7 @@ mjml -s index.mjml
 mjml --stdout index.mjml
 ```
 
-### Minify and beautify the output HTML
+##### Minify and beautify the output HTML
 
 ```bash
 $> mjml index.mjml --config.beautify true --config.minify false
@@ -82,13 +88,13 @@ $> mjml index.mjml --config.beautify true --config.minify false
 
 These are the default options.
 
-### Log error stack
+##### Log error stack
 
 ```bash
 $> mjml index.mjml --config.stack true
 ```
 
-### Render and redirect the result to a file
+##### Render and redirect the result to a file
 
 ```bash
 mjml index.mjml -o email_output.html
@@ -102,13 +108,13 @@ You can output the resulting email responsive HTML in a file.
 If the output file does not exist it will be created, but output directories must already exist.
 If output is a directory, output file(s) will be `output/input-file-name.html`
 
-### Set the validation rule to `skip` so that the file is rendered without being validated.
+##### Set the validation rule to `skip` so that the file is rendered without being validated.
 
 ```bash
 mjml -l skip -r index.mjml
 ```
 
-### Watch changes on a file
+##### Watch changes on a file
 
 If you like live-coding, you might want to use the `-w` option that enables you to re-render your file every time you save it.
 It can be time-saving when you can just split you screen and see the HTML output modified when you modify your MJML.
