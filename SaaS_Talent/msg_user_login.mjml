@@ -31,7 +31,7 @@
     <!--
     <mj-text mj-class="disclaimer">
       Or verify using this link:
-      <a href="{{var:btn_cta}}">{{var:btn_cta}}</a>
+      <a href="{{param:btn_cta}}">{{param:btn_cta}}</a>
     </mj-text> -->
     <mj-text mj-class="disclaimer">
       <p>

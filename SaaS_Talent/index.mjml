@@ -15,25 +15,12 @@
   </mj-head>
   <mj-body>
 
-    <!-- Replace {{data:msg}} with the message name. -->
+    <!-- Replace {{param:msg}} with the message name. -->
     <!-- For example, the email "msg/email_change" would result in "./msg/email_change.mjml" -->
 
+    <!-- Sample to try would be `./msg_email_change.mjml'  -->
 
-
-
-
-
-
-
-
-    <mj-include path="{{var:msg_path}}" />
-
-
-
-
-
-
-
+    <mj-include path="{{param:msg}}" />
 
 
 

@@ -36,17 +36,17 @@
 <mj-section padding="30px 2px 0px 0px">
   <mj-column>
 
-    <!--"{{var.socialAccount.avatar}}"-->
+    <!--"{{param.socialAccount.avatar}}"-->
     <!-- "https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" -->
-    <mj-image mj-class="avatar" src="{{var.socialAccount.avatar}}" align="center" css-class="profile-photo" />
-    <mj-image mj-class="{{var:network}}" align="center" css-class="social-icon" />
+    <mj-image mj-class="avatar" src="{{param.socialAccount.avatar}}" align="center" css-class="profile-photo" />
+    <mj-image mj-class="{{param:network}}" align="center" css-class="social-icon" />
   </mj-column>
 </mj-section>
 
 <mj-section padding="0px">
   <mj-column>
     <mj-text align="center">
-      <a href="{{var:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
+      <a href="{{param:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
 
     </mj-text>
   </mj-column>

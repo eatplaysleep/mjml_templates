@@ -42,15 +42,15 @@
 
     <!--"{{var.socialAccount.avatar}}"-->
     <!-- "https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" -->
-    <mj-image mj-class="avatar" src="{{var.socialAccount.avatar}}" align="center" css-class="profile-photo" />
-    <mj-image mj-class="{{var:socialAccount.network}}" align="center" css-class="social-icon" />
+    <mj-image mj-class="avatar" src="{{param.socialAccount.avatar}}" align="center" css-class="profile-photo" />
+    <mj-image mj-class="{{param:socialAccount.network}}" align="center" css-class="social-icon" />
   </mj-column>
 </mj-section>
 
 <mj-section padding="0px">
   <mj-column>
     <mj-text align="center">
-      <a href="{{var:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
+      <a href="{{param:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
 
     </mj-text>
   </mj-column>
@@ -60,13 +60,13 @@
 <mj-section padding="20px 40px 0px 40px">
   <mj-column>
     <mj-carousel mj-class="carousel">
-      <mj-carousel-image src="{{var:post.mediaURL}}" href="{{var:post.networkURL}}"/>
+      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}"/>
       <!-- "https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC8xN2NmYTU5ODBmM2Y5Y2M1MzdmNDI3YjYyM2E1ZjQ4Ny81QkVCQjMwMi90NTEuMjg4NS0xNS9lMzUvMzM4NzgzMDJfMTgzOTg5NDU5MTAyOTU4XzE5MDQ5NTQyMjc4NDM2NjE4MjRfbi5qcGc"
         href="https://www.instagram.com/p/Bj5XOU4jDFU/"-->
-      <mj-carousel-image src="{{var:post.mediaURL}}" href="{{var:post.networkURL}}"/>
+      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}"/>
                          <!-- src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC9iZDRkNDM1NzM2MDA0ZTRhYzMzZmRiYjk0NjgwZGU2My81QkVCODBDNi90NTEuMjg4NS0xNS9lMzUvMzQ5MjEzNjdfMzgyMjA5NDIyMjkxNTgyXzUwMzEwMTY3MTkzNTE1NDU4NTZfbi5qcGc"
         href="https://www.instagram.com/p/BkD7QMfDVMm/" -->
-      <mj-carousel-image src="{{var:post.mediaURL}}" href="{{var:post.networkURL}}"/>
+      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}"/>
                          <!-- src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC81N2MxNTBiNDRkZGExYmNhMmRlYjczYmI5NGU3YTJlNi81QkNCNEM0Ni90NTEuMjg4NS0xNS9lMzUvMzQ3MTI5OTNfNDIwMTUwOTg1MTI2ODIxXzM1NzY4OTQzMDM2NDcwMzk0ODhfbi5qcGc"
         href="https://www.instagram.com/p/BkQcu76jvCf/" -->
     </mj-carousel>
