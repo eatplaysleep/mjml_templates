@@ -11,24 +11,42 @@ The include files consist of the following:
     `header.mjml`: The formatting for the header, which contains the logo and social network icons.
     `footer.mjml`: The footer logo, tag line, and unsubscribe link.
 
-In order to properly render an email any variables contained in any of the files must be properly replaced. Variables are indicated by the use of `{{var:variable_name}}`. Variables in the base files are as follows:
-    #### index.mjml
-        `{{var:email_preview}}`: Provide a brief bit of text to be used in the email preview. For example, on a 'Welcome' email, the value for the variable could be `Welcome to Influential!`.      
-        `{{var:msg_path}}`: Provide the path for the message to be used in the body of the email. For example, for the `msg_alert_content.mjml` message you would provide `./msg_alert_content.mjml` which would result in the content of that particular template being generated in the body of `index.mjml`.
+### Parameters
+In order to properly render an email any **parameters** contained in any of the files must be properly replaced. Parameters are indicated by the use of `{{param:parameter_name}}`. Parameters are configurations/data that provide things like URLs, template names, and other configuration-based values that are used to generate the message and content. *Paramters are different from variables*. See information regarding variables below.
+ 
+Parameters in the base files (excluding `footer.mjml`) are as follows:
+#### index.mjml
+* `{{param:email_preview}}`: Provide a brief bit of text to be used in the email preview. For example, on a 'Welcome' email, the value for the parameter could be `Welcome to Influential!`.      
+* `{{param:msg_path}}`: Provide the path for the message to be used in the body of the email. For example, for the `msg_alert_content.mjml` message you would provide `./msg_alert_content.mjml` which would result in the content of that particular template being generated in the body of `index.mjml`.
 
-    #### footer.mjml
-        `{{var:unsub_link}}`: Provide the necessary data to properly generate an unsubscribe link. This variable is a natively supported variable when using MailJet. If no value is provided then the default value configured in MailJet will be used.
+#### msg_{template}.mjml
+        Each message may use various different parameters to fulfill the needs of the message. All parameters will be in the `{{param:paramter_name}}` format.
 
-    #### msg_{template}.mjml
-        Each message may use various different variables to fulfill the needs of the message. All variables will be in the `{{var:variable_name}}` format.
+#### Other Common Parameters
+The following are commonly found in various message templates or base file.
+* `{{param.socialAccount.avatar}}`: The URL for the social account avatar as provided by Social Hoarder.
+* `{{param.socialAccount.networkURL}}`: The network URL for the social account, such as the Facebook or Instagram URL.
+* `{{param.post.mediaURL}}`: The URL for the media related to a post. Typically an S3 URL.
+* `{{param.post.networkURL}}`: The network permalink for the actual post on the social network itself.
+* `{{param.btn_cta}}`: The URL for any given button that provides the user call to action. For example, this may be an invitation URL for the user to click on in order to create an account.
+ 
+### Variables 
+In addition to parameters, MailGun natively supports *variables*. Variables differ from parameters in that *they should be printed in the HTML output*. Variables are user visible. Their replacement values should be provided in a seperate JSON object sent to MailGun via their API and per their [specs](https://documentation.mailgun.com/en/latest/user_manual.html#attaching-data-to-messages). When MailGun sends the email they will replace the variables in the HTML content with the values provided in the JSON object.
 
-        Common variables include:
-        `{{var:greeting}}`: The name/salutation to be used in the greeting. Typically the user's nickname.
-        `{{var:user.name}}`: The full name of a user.
-        `{{var:user.nickname}}`: The preferred nickname of a user, such as their first name.
-        `{{var:email}}`: A user's email address.
+#### footer.mjml
+        `{{var:unsub_link}}`: Provide the necessary data to properly generate an unsubscribe link. This variable is a **natively supported variable when using MailJet.** If no value is provided then the default value configured in MailJet will be used.
+        
+#### Other Common variables include:
+* `{{var:greeting}}`: The name/salutation to be used in the greeting. Typically the user's nickname.
+* `{{var:user.name}}`: The full name of a user.
+* `{{var:user.nickname}}`: The preferred nickname of a user, such as their first name.
+* `{{var:email}}`: A user's email address.
 
-**Remember that prior to rendering a message the message body in `index.mjml` must be compiled with the proper template path!**
+___
+
+**Remember that prior to rendering a message the message body in `index.mjml` must be compiled with the proper template path parameter!**
+
+___
 
 ## Installation Options
 
