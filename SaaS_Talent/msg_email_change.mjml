@@ -25,14 +25,14 @@
 <mj-section padding="0px">
   <mj-column>
     <mj-text>
-      <p>Hey, {{var:customer.user.nickname}}! We noticed you made a change to your email address recently.</p>
+      <p>Hey, {{var:nickname:User}}! We noticed you made a change to your email address recently.</p>
       <p>
         <b>Old Email</b></br>
-        {{var:customer.user.email.old}}
+        {{var:oldemail:null}}
       </p>
       <p>
         <b>New Email</b></br>
-        {{var:customer.user.email}}
+        {{var:newemail:null}}
       </p>
       <p style="text-align:center">
         You can now log in with your new email.

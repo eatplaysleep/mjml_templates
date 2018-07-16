@@ -27,11 +27,11 @@
   <mj-column>
 
     <mj-text>
-      <p>Hey, {{var:customer.user.nickname}}!</p>
-      <p>{{var:socialAccount.firstName}} has posted new content to <span style="font-weight:bold; color:#00c0ff">{{var:socialAccount.network}}</span> matching the following alert:
+      <p>Hey, {{var:nickname:User}}!</p>
+      <p>{{var:socialaccountfirstname:Someone}} has posted new content to <span style="font-weight:bold; color:#00c0ff">{{var:socialaccountnetwork:their account}}</span> matching the following alert:
       </p>
       <p style="font-weight:bold">
-        {{var:alert.description}}
+        {{var:alertdescription:Custom Alert}}
       </p>
     </mj-text>
   </mj-column>
@@ -40,7 +40,7 @@
 <mj-section padding="30px 2px 0px 0px">
   <mj-column>
 
-    <!--"{{var.socialAccount.avatar}}"-->
+    <!--"{{param.socialAccount.avatar}}"-->
     <!-- "https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" -->
     <mj-image mj-class="avatar" src="{{param.socialAccount.avatar}}" align="center" css-class="profile-photo" />
     <mj-image mj-class="{{param:socialAccount.network}}" align="center" css-class="social-icon" />
@@ -50,7 +50,7 @@
 <mj-section padding="0px">
   <mj-column>
     <mj-text align="center">
-      <a href="{{param:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
+      <a href="{{param:socialAccount.networkURL}}">@{{var:socialaccountusername:#}}</a>
 
     </mj-text>
   </mj-column>

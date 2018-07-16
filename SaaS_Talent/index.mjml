@@ -7,7 +7,7 @@
 
     <!-- Email Preview Text -->
     <mj-preview>
-      {{data:email_preview}}
+      {{var:emailpreview:You have a notification from the Influential Network!}}
     </mj-preview>
     <mj-include path="./css.mjml" />
     <mj-include path="./attributes.mjml" />

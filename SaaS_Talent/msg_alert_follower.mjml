@@ -11,7 +11,7 @@
 <mj-section>
   <mj-column>
     <mj-text mj-class="header">
-      Follower {{var:alert.type}} Alert for {{var:socialAccount.firstName}}
+      Follower {{var:alerttype: }} Alert for {{var:socialaccountfirstName:Someone}}
     </mj-text>
   </mj-column>
 </mj-section>
@@ -26,8 +26,8 @@
   <mj-column>
 
     <mj-text>
-      <p>Hey, {{var:customer.user.nickname}}!</p>
-      <p>{{var:socialAccount.firstName}}'s <span style="font-weight:bold; color:#00c0ff">{{var:socialAccount.network}}</span> following has {{var:alert.type}}d by at least {{var:alert.parameter}}.
+      <p>Hey, {{var:nickname:User}}!</p>
+      <p>{{var:socialaccountfirstNameSomeone}}'s <span style="font-weight:bold; color:#00c0ff">{{var:socialaccountnetwork:account}}</span> following has {{var:alerttype:change}}d by at least {{var:alertparameter:some amount}}.
       </p>
     </mj-text>
   </mj-column>
@@ -46,7 +46,7 @@
 <mj-section padding="0px">
   <mj-column>
     <mj-text align="center">
-      <a href="{{param:socialAccount.networkURL}}">@{{var:socialAccount.username}}</a>
+      <a href="{{param:socialAccount.networkURL}}">@{{var:socialaccountusername:#}}</a>
 
     </mj-text>
   </mj-column>
