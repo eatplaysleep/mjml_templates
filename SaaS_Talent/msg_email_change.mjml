@@ -38,7 +38,7 @@
         You can now log in with your new email.
       </p>
     </mj-text>
-    <mj-button mj-class="TIN-btn" padding="0px 0px 0px 0px" href="http://www.influential.co">Login</mj-button>
+    <mj-button mj-class="TIN-btn" padding="0px 0px 0px 0px" href="{{param:btn_cta}}">Login</mj-button>
     <!--
     <mj-text mj-class="disclaimer">
       Or verify using this link:

@@ -75,6 +75,6 @@
 
 <mj-section>
   <mj-column>
-    <mj-button mj-class="TIN-btn" padding="20px 0px 0px 0px" href="http://www.influential.co">View Alert</mj-button>
+    <mj-button mj-class="TIN-btn" padding="20px 0px 0px 0px" href="{{param:btn_cta}}">View Alert</mj-button>
   </mj-column>
 </mj-section>

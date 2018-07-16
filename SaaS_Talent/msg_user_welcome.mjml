@@ -28,7 +28,7 @@
     <mj-text>
       Hey, {{var:customer.user.nickname}}! Thanks for signing up for the Influential Platform. As soon as you verify your email address, you'll be able to get started.
     </mj-text>
-    <mj-button mj-class="TIN-btn" padding="25px 0px 0px 0px" href="http://www.influential.co">Verify Your Email Address</mj-button>
+    <mj-button mj-class="TIN-btn" padding="25px 0px 0px 0px" href="{{param:btn_cta}}">Verify Your Email Address</mj-button>
     <!--
     <mj-text mj-class="disclaimer">
       Or verify using this link:
