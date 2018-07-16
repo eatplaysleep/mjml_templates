@@ -218,14 +218,10 @@ curl -s \
 			}
 		]
 	}'
-
-
-
-
+```
 ### footer.mjml <-- The exception!
 MailJet supports certain variables natively. If the unsubscription link is configured then the following variable can be printed out in the HTML and will automatically be replaced. 
 * `{{mj:unsub_link}}`: Provide the necessary data to properly generate an unsubscribe link. This variable is a **natively supported variable when using MailJet.** If no value is provided then the default value configured in MailJet will be used.
-```
 ___
 
 **Remember that prior to rendering a message the message body in `index.mjml` must be compiled with the proper template path parameter!**
