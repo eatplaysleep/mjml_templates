@@ -15,8 +15,7 @@ The include files consist of the following:
 In order to properly render an email any **parameters** contained in any of the files must be properly replaced. Parameters are indicated by the use of `{{param:parameter_name}}`. Parameters are configurations/data that provide things like URLs, template names, and other configuration-based values that are used to generate the message and content. *Paramters are different from variables*. See information regarding variables below.
  
 Parameters in the base files (excluding `footer.mjml`) are as follows:
-#### index.mjml
-* `{{param:email_preview}}`: Provide a brief bit of text to be used in the email preview. For example, on a 'Welcome' email, the value for the parameter could be `Welcome to Influential!`.      
+#### index.mjml    
 * `{{param:msg_path}}`: Provide the path for the message to be used in the body of the email. For example, for the `msg_alert_content.mjml` message you would provide `./msg_alert_content.mjml` which would result in the content of that particular template being generated in the body of `index.mjml`.
 
 #### msg_{template}.mjml
@@ -41,9 +40,18 @@ Variables are in the following format: `{{var:varname:defaultvalue}}`. Notice th
  
 #### Other Common variables include:
 * `{{var:greeting:User}}`: The name/salutation to be used in the greeting. Typically the user's nickname.
-* `{{var:userName: }}`: The full name of a user as provided from the Customer micro service DB (`customers.contact.firstName`).
+* `{{var:username: }}`: The full name of a user as provided from the Customer micro service DB (`customers.contact.firstName`).
 * `{{var:nickname: }}`: The preferred nickname of a user, such as their first name.
 * `{{var:email: }}`: A user's email address.
+* `{{var:socialaccountfirstname:Someone}}`: The first name of the owner of the social account as provided by Social Hoarder.
+* `{{var:socialaccountnetwork:account}}`: The network of the social account referenced. I.e. Facebook or Instagram.
+* `{{var:alertdescription:Custom Alert}}`: The name of the alert.
+* `{{var:socialaccountusername:#}}`: The social account handle.
+* `{{var:alerttype:change}}`: Type of alert being referenced, such as an `Increase` or `Decrease` alert.
+* `{{var:alertparameter:some amount}}`: Increase/decrease of the follower amount that triggered the alert.
+* `{{var:productname:Influential}}`: Name of the product referenced in the email. I.e. `Talent Watch`. 
+* `{{var:companyname:a company}}`: Name of company being referenced in the email.
+* `{{var:emailpreview:You have a notification from the Influential Network!}}`: The text that is visible in email clients prior to opening an email. If none is provided, the default will be set. *This variable is in the `index.mjml` file.*
 
 ##### Example of MailJet curl API
 Assuming the following parameters/variables, as provided by the Notify service to the Email service, this is an example API call using variables.
