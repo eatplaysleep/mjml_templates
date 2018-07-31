@@ -12,20 +12,21 @@
   <mj-column>
     <mj-text mj-class="header">
       Content Alert
-      <span style="font-weight:bold;font-size:20px">{{var:product.name}}</span>
+      <span style="font-weight:bold; font-size:20px">{{var:product.name}}</span>
     </mj-text>
   </mj-column>
 </mj-section>
 
 <mj-section padding="3px 0px 0px 0px">
   <mj-column>
-    <mj-image src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" width="99px" align="left" />
+    <mj-image src="https://github.com/eatplaysleep/mjml_templates/blob/master/SaaS_Talent/assets/Gradient_Separator@3x.png?raw=true" width="99px" align="left" />
   </mj-column>
 </mj-section>
+
 <mj-spacer height="17px" />
+
 <mj-section padding="0px">
   <mj-column>
-
     <mj-text>
       <p>Hey, {{var:nickname:User}}!</p>
       <p>{{var:socialaccountfirstname:Someone}} has posted new content to <span style="font-weight:bold; color:#00c0ff">{{var:socialaccountnetwork:their account}}</span> matching the following alert:
@@ -40,9 +41,14 @@
 <mj-section padding="30px 2px 0px 0px">
   <mj-column>
 
-    <!--"{{param.socialAccount.avatar}}"-->
+    <!-- "{{param.socialAccount.avatar}}" -->
     <!-- "https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" -->
+
     <mj-image mj-class="avatar" src="{{param.socialAccount.avatar}}" align="center" css-class="profile-photo" />
+
+    <!-- "{{param:socialAccount.network}}" -->
+    <!-- "instagram" -->
+
     <mj-image mj-class="{{param:socialAccount.network}}" align="center" css-class="social-icon" />
   </mj-column>
 </mj-section>
@@ -50,31 +56,43 @@
 <mj-section padding="0px">
   <mj-column>
     <mj-text align="center">
+
+      <!-- "https://www.influential.co" -->
+      <!-- "{{param:socialAccount.networkURL}}" -->
+
       <a href="{{param:socialAccount.networkURL}}">@{{var:socialaccountusername:#}}</a>
 
     </mj-text>
   </mj-column>
-
 </mj-section>
 
 <mj-section padding="20px 40px 0px 40px">
   <mj-column>
     <mj-carousel mj-class="carousel">
-      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}"/>
-      <!-- "https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC8xN2NmYTU5ODBmM2Y5Y2M1MzdmNDI3YjYyM2E1ZjQ4Ny81QkVCQjMwMi90NTEuMjg4NS0xNS9lMzUvMzM4NzgzMDJfMTgzOTg5NDU5MTAyOTU4XzE5MDQ5NTQyMjc4NDM2NjE4MjRfbi5qcGc"
-        href="https://www.instagram.com/p/Bj5XOU4jDFU/"-->
-      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}"/>
-                         <!-- src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC9iZDRkNDM1NzM2MDA0ZTRhYzMzZmRiYjk0NjgwZGU2My81QkVCODBDNi90NTEuMjg4NS0xNS9lMzUvMzQ5MjEzNjdfMzgyMjA5NDIyMjkxNTgyXzUwMzEwMTY3MTkzNTE1NDU4NTZfbi5qcGc"
-        href="https://www.instagram.com/p/BkD7QMfDVMm/" -->
-      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}"/>
-                         <!-- src="https://app.influential.co/api/e/aHR0cHM6Ly9zY29udGVudC1kZnc1LTEuY2RuaW5zdGFncmFtLmNvbS92cC81N2MxNTBiNDRkZGExYmNhMmRlYjczYmI5NGU3YTJlNi81QkNCNEM0Ni90NTEuMjg4NS0xNS9lMzUvMzQ3MTI5OTNfNDIwMTUwOTg1MTI2ODIxXzM1NzY4OTQzMDM2NDcwMzk0ODhfbi5qcGc"
-        href="https://www.instagram.com/p/BkQcu76jvCf/" -->
+      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}" />
+      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}" />
+      <mj-carousel-image src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}" />
     </mj-carousel>
+    
+    <!-- src="https://bit.ly/2v1BKnD" href="https://www.instagram.com/p/Bj5XOU4jDFU/"> -->
+    <!-- src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}" -->
+
+
+    <!-- src="https://bit.ly/2v1BKnD" href="https://www.instagram.com/p/BkD7QMfDVMm/"> -->
+    <!-- src="{{param:post.mediaURL}}" href=""{{param.post.networkURL}}"> -->
+
+
+    <!-- src="https://bit.ly/2NUvuVI" href="https://www.instagram.com/p/BkQcu76jvCf/" > -->
+    <!-- src="{{param:post.mediaURL}}" href="{{param:post.networkURL}}" > -->
+
   </mj-column>
 </mj-section>
 
 <mj-section>
   <mj-column>
-    <mj-button mj-class="TIN-btn" padding="20px 0px 0px 0px" href="{{param:btn_cta}}">View Alert</mj-button>
+
+    <!-- "{{param:btn_cta}}" -->
+
+    <mj-button mj-class="TIN-btn " padding="20px 0px 0px 0px href="{{param:btn_cta}}">View Alert</mj-button>
   </mj-column>
 </mj-section>

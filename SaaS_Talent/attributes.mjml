@@ -39,13 +39,13 @@
   <!-- Logos -->
   <mj-class name="TIN_logo" align="left" width="109px" padding="0px" src="https://assets.influential.co/dashboard/email-templates/logos/influential_logo_horizontal@2x.png" href="http://www.influential.co" />
 
-  <mj-class name="TIN_footer_logo" padding="0px" width="76px" src="https://www.dropbox.com/s/jen6qwn563gv82p/Influential_Stacked-Logo_White.svg?raw=1" href="https://www.influential.co" />
+  <mj-class name="TIN_footer_logo" padding="0px" width="76px" src="https://github.com/eatplaysleep/mjml_templates/blob/master/SaaS_Talent/assets/Influential_Stacked-Logo_White.png?raw=true" href="https://www.influential.co" />
 
   <!-- Social Network Icons -->
   <mj-class name="social_icons" vertical-align="middle" />
-  <mj-class name="facebook" align="center" width="24px" src="https://www.dropbox.com/s/i3fcjsuotq4mwy7/Icon_Facebook%403x.png?raw=1" padding="0px" />
-  <mj-class name="instagram" align="center" width="24px" padding="0px" src="https://www.dropbox.com/s/gblpygsz673i1mj/Icon_Instagram%403x.png?raw=1" />
-  <mj-class name="twitter" align="center" width="24px" padding="0px" src="https://www.dropbox.com/s/5gdvev34nqx41b4/Icon_Twitter%403x.png?raw=1" />
+  <mj-class name="facebook" align="center" width="24px" src="https://github.com/eatplaysleep/mjml_templates/blob/master/SaaS_Talent/assets/Icon_Facebook@3x.png?raw=true" padding="0px" />
+  <mj-class name="instagram" align="center" width="24px" padding="0px" src="https://github.com/eatplaysleep/mjml_templates/blob/master/SaaS_Talent/assets/Icon_Instagram@3x.png?raw=true" />
+  <mj-class name="twitter" align="center" width="24px" padding="0px" src="https://github.com/eatplaysleep/mjml_templates/blob/master/SaaS_Talent/assets/Icon_Twitter@3x.png?raw=true" />
 
 <!-- Social Avatar -->
   <mj-class name="avatar" align="center" vertical-align="middle" width="48px" padding="0px" border-radius="50%"/>

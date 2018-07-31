@@ -18,7 +18,7 @@
 
 <mj-section padding="3px 0px 0px 0px">
   <mj-column>
-    <mj-image src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" width="99px" align="left" />
+    <mj-image src="https://github.com/eatplaysleep/mjml_templates/blob/master/SaaS_Talent/assets/Gradient_Separator@3x.png?raw=true" width="99px" align="left" />
   </mj-column>
 </mj-section>
 <mj-spacer height="17px" />

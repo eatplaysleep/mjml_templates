@@ -18,13 +18,14 @@
 
 <mj-section padding="3px 0px 0px 0px">
   <mj-column>
-    <mj-image src="https://www.dropbox.com/s/w3e9hp835xmjelw/Gradient_Separator%403x.png?raw=1" width="99px" align="left" />
+    <mj-image src="https://github.com/eatplaysleep/mjml_templates/blob/master/SaaS_Talent/assets/Gradient_Separator@3x.png?raw=true" width="99px" align="left" />
   </mj-column>
 </mj-section>
+
 <mj-spacer height="17px" />
+
 <mj-section padding="0px">
   <mj-column>
-
     <mj-text>
       <p>Hey, {{var:nickname:User}}!</p>
       <p>{{var:socialaccountfirstNameSomeone}}'s <span style="font-weight:bold; color:#00c0ff">{{var:socialaccountnetwork:account}}</span> following has {{var:alerttype:change}}d by at least {{var:alertparameter:some amount}}.
@@ -38,6 +39,7 @@
 
     <!--"{{param.socialAccount.avatar}}"-->
     <!-- "https://tinproduction.s3.amazonaws.com/tmp-29OLnDTWdNA5KF" -->
+
     <mj-image mj-class="avatar" src="{{param.socialAccount.avatar}}" align="center" css-class="profile-photo" />
     <mj-image mj-class="{{param:network}}" align="center" css-class="social-icon" />
   </mj-column>
@@ -47,12 +49,10 @@
   <mj-column>
     <mj-text align="center">
       <a href="{{param:socialAccount.networkURL}}">@{{var:socialaccountusername:#}}</a>
-
     </mj-text>
   </mj-column>
 
 </mj-section>
-
 
 <mj-section>
   <mj-column>
