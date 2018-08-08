@@ -8,11 +8,13 @@
 
 <!-- Body -->
 
+<!-- {{var:productname:Influential}} -->
+
 <mj-section>
   <mj-column>
     <mj-text mj-class="header">
       Welcome to
-      <span style="font-weight:bold;font-size:20px">{{var:productname:Influential}}</span>
+      <span style="font-weight:bold;font-size:20px">Influential.</span>
     </mj-text>
   </mj-column>
 </mj-section>
