@@ -20,7 +20,7 @@
 
     <!-- Sample to try would be `./msg_email_change.mjml'  -->
 
-    <mj-include path="{{param:msg}}" />
+    <mj-include path="./msg_user_welcome.mjml" />
 
 
 
